@@ -1,0 +1,30 @@
+# BeFirst — Free SEO Audit Tool
+
+## What is BeFirst?
+BeFirst is a free SEO audit tool that grades any web page from A+ to F. It checks meta tags, page speed, keywords, broken links, mobile-friendliness, and schema markup using Google's public Search Essentials.
+
+## Who is it for?
+- Website owners who want to know why their site isn't ranking
+- Small businesses and freelancers who can't afford expensive SEO tools
+- bloggers, e-commerce stores, portfolio sites — any public webpage
+
+## Key Features
+- Single-page SEO audit with letter grade (A+ to F)
+- Meta tag analysis (title, description, Open Graph)
+- Page speed scoring
+- Keyword gap detection
+- Broken link detection
+- Mobile-friendliness check
+- Schema markup validation
+- AEO (Answer Engine Optimization) audit
+- GEO (Generative Engine Optimization) audit
+
+## Pricing
+- Free: single-page audit with email signup
+- Starter (Rs 99): multi-page crawl, competitor compare
+- Pro (Rs 799): full-site audit, priority support, API access
+
+## Links
+- Site: https://befirstseo.pages.dev
+- Audit tool: https://befirstseo.pages.dev/app
+- Backend API: https://befirst-backend.onrender.com

@@ -1,0 +1,17 @@
+{
+  "name": "BeFirst SEO — Free SEO Audit Tool",
+  "short_name": "BeFirst SEO",
+  "description": "Free SEO checker: audit any website SEO score, meta tags, page speed, keywords and broken links in 60 seconds.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ECE5D6",
+  "theme_color": "#ECE5D6",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "img/BF_Logo_Accent.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

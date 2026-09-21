@@ -1,0 +1,11 @@
+# BeFirst SEO — Be First on Google
+
+Free SEO audit tool. Grade any public web page A+ to F across 20+ checks
+from Google's public Search Essentials: titles, meta tags, headings, page
+speed (PageSpeed API lab data), mobile-friendliness, schema markup, keyword
+ideas, rank checks, outlink inspection and broken-link leads.
+
+- Home: https://befirstseo.pages.dev/
+- App: https://befirstseo.pages.dev/app
+- Free plan: single-page audit, keyword ideas, rank check, brand check, generators.
+- Pro plan: full-site crawl, competitor compare, AI article writer, rank tracking.

@@ -1,0 +1,1081 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XNSS9DGZ7J"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-XNSS9DGZ7J');
+</script>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="mobile-web-app-capable" content="yes">
+<title>Free SEO Audit Tool & Website Checker | BeFirst SEO</title>
+<meta name="description" content="Free SEO checker: audit any website SEO score, meta tags, page speed, keywords and broken links in 60 seconds. Free signup.">
+<meta name="keywords" content="free seo audit tool, seo checker free, website seo analysis, free website audit, seo score checker, check website seo, site audit tool, free seo analysis, website grader">
+<link rel="canonical" href="https://befirstseo.pages.dev/">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#ECE5D6">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Free SEO Audit Tool & Website Checker | BeFirst SEO">
+<meta property="og:description" content="Free SEO checker: audit any website SEO score, meta tags, page speed, keywords and broken links in 60 seconds. Free signup.">
+<meta property="og:image" content="https://befirstseo.pages.dev/img/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://befirstseo.pages.dev/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free SEO Audit Tool & Website Checker | BeFirst SEO">
+<meta name="twitter:description" content="Free SEO checker: audit any website SEO score, meta tags, page speed, keywords and broken links in 60 seconds. Free signup.">
+<meta name="twitter:image" content="https://befirstseo.pages.dev/img/og-image.png">
+<link rel="icon" href="BF_Logo_Reference.svg">
+<link rel="manifest" href="manifest.json">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"BeFirst SEO","url":"https://befirstseo.pages.dev/","description":"B&F — Be First on Google. Free SEO audit tool built on Google's public Search Essentials."}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Free SEO Audit Tool","applicationCategory":"SEOApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"INR"},"description":"Free SEO audit tool: grade any page A+ to F, find missing meta tags, broken links, slow speed and keyword gaps."}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"Is this SEO audit really free?","acceptedAnswer":{"@type":"Answer","text":"Yes. Single-page audits are free with email signup. Advanced tools like full-site crawl and compare are Pro."}},
+{"@type":"Question","name":"How is the grade calculated?","acceptedAnswer":{"@type":"Answer","text":"Your page is checked against 20+ rules from Google's public Search Essentials: titles, meta tags, headings, speed, mobile, schema and more. Scores map to grades A+ to F."}},
+{"@type":"Question","name":"Do I need to install anything?","acceptedAnswer":{"@type":"Answer","text":"No. Paste any URL in the box above and get your grade in about a minute. Nothing to install — just your email to run the free audit."}},
+{"@type":"Question","name":"Does it work for any website?","acceptedAnswer":{"@type":"Answer","text":"Yes — any public page: blogs, shops, portfolios, business sites. If Google can see it, we can audit it."}}
+]}
+</script>
+<style>
+/* ============================================
+   BeFirst — Single-page SaaS
+   Landing + Audit Tool
+   ============================================ */
+:root{
+  --ivory:#ECE5D6; --ivory2:#E2D8C4; --ink:#222222; --ink-soft:#555555;
+  --line:#D8CCB4; --accent:#B4552D; --accent-soft:#F0DCCF; --green:#2F7D4F;
+  --lav:#C9BDF2; --sage:#D2E2CE; --blush:#F0D5C4;
+  --yellow:#9A6B0F; --red:#B3362B;
+  --card:rgba(255,255,255,.55); --radius:20px;
+  --d-fast:.18s; --d-normal:.35s; --d-slow:.6s;
+  --ease:cubic-bezier(.22,1,.36,1);
+  --rise:24px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--ivory);color:var(--ink);font-family:Georgia,'Times New Roman',serif;line-height:1.6;-webkit-font-smoothing:antialiased;min-height:100vh;overflow-x:hidden}
+.sans{font-family:-apple-system,'Segoe UI',Inter,Roboto,sans-serif}
+
+/* ---- Motion foundations ---- */
+.reveal{opacity:0;transform:translateY(var(--rise));transition:opacity var(--d-slow) var(--ease),transform var(--d-slow) var(--ease)}
+.reveal.in{opacity:1;transform:none}
+.d1{transition-delay:.08s}.d2{transition-delay:.16s}.d3{transition-delay:.24s}.d4{transition-delay:.32s}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .reveal{opacity:1;transform:none;transition:opacity .15s}
+  *{animation:none!important}
+}
+@media (prefers-reduced-transparency:reduce){
+  nav{background:var(--ivory);backdrop-filter:none;-webkit-backdrop-filter:none}
+  .blob,.float-ico,.orb{display:none}
+  .btn.liquid{background:var(--ink);color:var(--ivory);backdrop-filter:none;-webkit-backdrop-filter:none}
+  .demo-box.liquid{background:#fff;backdrop-filter:none;-webkit-backdrop-filter:none}
+}
+@media (prefers-contrast:more){
+  nav{background:var(--ivory);backdrop-filter:none;-webkit-backdrop-filter:none}
+  .nav-links a,.sub,.card p,.step p,.faq p{color:var(--ink)}
+  .card,.step,.faq details,.demo-box,.price{border:2px solid var(--ink)}
+  h1 em{background:none;color:var(--ink);-webkit-text-fill-color:var(--ink)}
+}
+.wrap{max-width:1060px;margin:0 auto;padding:0 24px}
+
+/* ---- Nav ---- */
+nav{position:sticky;top:0;z-index:50;background:rgba(236,229,214,.72);backdrop-filter:blur(20px) saturate(180%);-webkit-backdrop-filter:blur(20px) saturate(180%);border-bottom:1px solid rgba(255,255,255,.55);box-shadow:0 1px 0 rgba(34,34,34,.06);transition:box-shadow var(--d-normal) var(--ease)}
+nav.scrolled{box-shadow:0 8px 30px rgba(34,34,34,.09)}
+.nav-in{display:flex;align-items:center;justify-content:flex-start;height:62px;position:relative;padding:0 24px}
+.nav-links{position:absolute;right:24px;display:flex;gap:26px;align-items:center}
+.nav-links a{color:var(--ink-soft);text-decoration:none;font-size:15px}
+.nav-links a:hover{color:var(--ink)}
+.brand{font-size:26px;font-weight:800;letter-spacing:-.03em;text-decoration:none;color:var(--ink);display:flex;align-items:center;gap:5px}
+.brand-logo{width:44px;height:48px;display:block;object-fit:cover;mix-blend-mode:multiply;flex:none}
+.brand-name{font-family:-apple-system,'Segoe UI',Inter,Roboto,sans-serif;font-size:25px;font-weight:900;letter-spacing:-.06em;color:var(--ink);line-height:1}
+.brand-name strong{color:var(--accent);font-weight:800}
+
+/* ---- Buttons ---- */
+.btn{display:inline-block;background:var(--ink);color:var(--ivory);border:none;border-radius:10px;padding:12px 26px;font-size:16px;cursor:pointer;text-decoration:none;transition:transform var(--d-fast) var(--ease),background var(--d-fast) var(--ease)}
+.btn:hover{transform:scale(1.04);background:#000}
+.btn:active{transform:scale(.96);transition-duration:.1s}
+.btn.shimmer{position:relative;overflow:hidden;isolation:isolate}
+.btn.shimmer::after{content:"";position:absolute;inset:-2px;background:linear-gradient(110deg,transparent 30%,rgba(255,255,255,.85) 50%,transparent 70%);transform:translateX(-120%);animation:shine 2.8s ease-in-out infinite;pointer-events:none}
+@keyframes shine{0%{transform:translateX(-120%)}55%,100%{transform:translateX(120%)}}
+.btn.accent{background:var(--accent)}
+.btn.accent:hover{background:#97431f}
+.btn.liquid{background:rgba(255,255,255,.24);backdrop-filter:blur(18px) saturate(180%);-webkit-backdrop-filter:blur(18px) saturate(180%);border:1px solid rgba(255,255,255,.65);color:var(--ink);box-shadow:inset 0 1px 1px rgba(255,255,255,.9),inset 0 -8px 16px rgba(185,90,50,.16),0 12px 30px rgba(185,90,50,.28)}
+.btn.liquid:hover{background:rgba(255,255,255,.38);transform:scale(1.04)}
+.cta-band .btn.liquid{background:rgba(255,255,255,.16);border-color:rgba(255,255,255,.5);color:#fff;text-shadow:0 1px 10px rgba(0,0,0,.55)}
+.demo-box.liquid{background:rgba(255,255,255,.6);backdrop-filter:blur(24px) saturate(180%);-webkit-backdrop-filter:blur(24px) saturate(180%);border:1px solid rgba(255,255,255,.8);border-radius:24px;box-shadow:inset 0 1px 0 rgba(255,255,255,.9),0 24px 70px rgba(120,110,160,.18),0 4px 14px rgba(34,34,34,.06)}
+
+/* ---- Chrome headline ---- */
+h1 em{font-style:italic;background:linear-gradient(180deg,#6d7278 0%,#232527 38%,#a8adb3 50%,#2b2e33 62%,#7d838a 100%);-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent}
+
+/* ---- Hero ---- */
+.hero{padding:88px 0 60px;text-align:center;position:relative;overflow:hidden}
+.hero>*{position:relative;z-index:1}
+.eyebrow{display:inline-block;font-size:13px;letter-spacing:2px;text-transform:uppercase;color:var(--accent);border:1px solid var(--accent);border-radius:99px;padding:6px 18px;margin-bottom:26px}
+h1{font-size:clamp(38px,6vw,62px);line-height:1.08;letter-spacing:-.02em;font-optical-sizing:auto;max-width:820px;margin:0 auto 20px}
+.sub{font-size:19px;color:var(--ink-soft);max-width:620px;margin:0 auto 36px}
+.demo-box{background:#fff;border:1px solid var(--line);border-radius:16px;padding:26px;max-width:640px;margin:0 auto;box-shadow:0 12px 40px rgba(34,34,34,.07)}
+.demo-row{display:flex;gap:10px}
+.demo-row input{flex:1;border:1px solid var(--line);border-radius:16px;padding:13px 16px;font-size:16px;background:var(--ivory);color:var(--ink);min-width:0}
+.demo-row input:focus{outline:2px solid var(--accent);outline-offset:1px}
+.demo-note{font-size:13px;color:var(--ink-soft);margin-top:12px}
+#demoResult{display:none;margin-top:22px;text-align:left}
+.grade-ring{display:flex;gap:20px;align-items:center}
+.grade-big{font-size:64px;font-weight:bold;width:110px;height:110px;flex:none;display:flex;align-items:center;justify-content:center;border-radius:50%;border:5px solid var(--green);background:var(--ivory)}
+.bars{flex:1;display:flex;flex-direction:column;gap:10px;min-width:0}
+.bar-row{display:grid;grid-template-columns:52px 1fr 34px;gap:10px;align-items:center;font-size:14px}
+.bar-track{background:var(--ivory2);border-radius:99px;height:10px;overflow:hidden}
+.bar-fill{height:100%;width:0;border-radius:99px;background:var(--accent);transition:width 1s var(--ease)}
+.demo-fixes{margin-top:16px;font-size:15px}
+.demo-fixes li{margin:6px 0 6px 20px}
+.spin{display:inline-block;width:18px;height:18px;border:3px solid var(--line);border-top-color:var(--accent);border-radius:50%;animation:sp .8s linear infinite;vertical-align:-3px}
+@keyframes sp{to{transform:rotate(360deg)}}
+
+/* ---- Motion layer: blobs + orbs ---- */
+.blob{position:absolute;border-radius:50%;filter:blur(70px);opacity:.55;pointer-events:none;z-index:0}
+.blob.b1{width:420px;height:420px;background:#CFC3F0;top:-130px;left:-130px;animation:drift 14s ease-in-out infinite alternate}
+.blob.b2{width:380px;height:380px;background:#EFD9C6;bottom:-150px;right:-110px;animation:drift 18s ease-in-out infinite alternate-reverse}
+@keyframes drift{from{transform:translate(0,0) scale(1)}to{transform:translate(60px,40px) scale(1.15)}}
+.orb{position:absolute;z-index:0;pointer-events:none;animation:bob 6s ease-in-out infinite}
+.orb.glass{width:74px;height:74px;border-radius:50%;background:radial-gradient(circle at 32% 28%,rgba(255,255,255,.95),rgba(255,255,255,.15) 55%,rgba(190,180,220,.25));border:1px solid rgba(255,255,255,.7);box-shadow:inset -6px -8px 16px rgba(150,140,200,.25),0 10px 26px rgba(120,110,160,.18)}
+.orb.silver{width:56px;height:56px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#ffffff,#cfc9c2 45%,#8f8a83 75%,#b9b3aa);box-shadow:0 8px 22px rgba(34,34,34,.18)}
+.orb.lav{width:44px;height:44px;border-radius:46% 54% 55% 45%/48% 44% 56% 52%;background:linear-gradient(135deg,#b7a6ee,#8f7fe0);box-shadow:0 8px 20px rgba(140,125,220,.4)}
+.orb.drop{width:22px;height:22px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#fff,rgba(180,200,220,.35) 60%,rgba(150,170,200,.5));border:1px solid rgba(255,255,255,.8)}
+.orb.ring{width:60px;height:60px;border-radius:50%;border:10px solid rgba(255,255,255,.55);box-shadow:0 8px 20px rgba(120,110,160,.15),inset 0 4px 10px rgba(120,110,160,.15)}
+.orb.o1{top:14%;left:4%}.orb.o2{top:20%;right:6%;animation-delay:1.2s}.orb.o3{bottom:14%;left:8%;animation-delay:2.1s}.orb.o4{bottom:20%;right:4%;animation-delay:.6s}.orb.o5{top:48%;left:2%;animation-delay:2.8s}
+@keyframes bob{0%,100%{transform:translateY(0) rotate(-6deg)}50%{transform:translateY(-16px) rotate(6deg)}}
+
+/* ---- Marquee ---- */
+.marquee{overflow:hidden;background:transparent;padding:22px 0;margin-top:36px;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.marquee-track{display:flex;width:max-content;animation:scrollx 45s linear infinite}
+.marquee:hover .marquee-track{animation-play-state:paused}
+.marquee-track span{font-size:15px;letter-spacing:.14em;text-transform:uppercase;color:#111;white-space:nowrap;padding:0 40px}
+.marquee-track b{color:var(--ink)}
+.marquee-track span{display:flex;align-items:center;gap:12px}
+.mq-logo{width:30px;height:30px;flex:none;filter:grayscale(1);opacity:.8}
+@keyframes scrollx{to{transform:translateX(-50%)}}
+@media(max-width:760px){.float-ico,.orb{display:none}.blob.b1{width:260px;height:260px}.blob.b2{width:220px;height:220px}}
+
+/* ---- Stats ---- */
+.stats{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--ivory2)}
+.stats-in{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;padding:34px 24px;text-align:center}
+.stat b{display:block;font-size:38px;letter-spacing:-1px;background:linear-gradient(135deg,var(--ink),var(--accent));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;transition:transform .25s var(--ease)}
+.stat:hover b{transform:scale(1.08)}
+.stat b.landed{animation:statpop .5s var(--ease)}
+@keyframes statpop{0%{transform:scale(.7)}55%{transform:scale(1.18)}100%{transform:scale(1)}}
+@media (prefers-reduced-motion: no-preference){
+.stat b{animation:statglow 3s ease-in-out infinite}
+.stat b.landed{animation:statpop .5s var(--ease),statglow 3s ease-in-out .5s infinite}
+@keyframes statglow{0%,100%{filter:drop-shadow(0 0 0 rgba(180,85,45,0))}50%{filter:drop-shadow(0 0 10px rgba(180,85,45,.45))}}
+}
+.stat span{font-size:14px;color:var(--ink-soft)}
+
+/* ---- Sections ---- */
+section.block{padding:72px 0}
+h2.sec{font-size:clamp(28px,4vw,40px);line-height:1.15;letter-spacing:-.02em;text-align:center;margin-bottom:14px}
+p.lead{text-align:center;color:var(--ink-soft);font-size:18px;max-width:640px;margin:0 auto 44px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:linear-gradient(135deg,rgba(255,255,255,.85),rgba(255,255,255,.45));backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.7);border-radius:20px;padding:26px;box-shadow:0 10px 30px rgba(120,110,160,.1);transition:transform var(--d-normal) var(--ease),box-shadow var(--d-normal) var(--ease)}
+.grid .card:nth-child(3n+1){background:linear-gradient(135deg,rgba(201,189,242,.7),rgba(255,255,255,.45))}
+.grid .card:nth-child(3n){background:linear-gradient(135deg,rgba(236,229,214,.8),rgba(255,255,255,.45))}
+.card:hover{transform:translateY(-6px);box-shadow:0 16px 36px rgba(34,34,34,.1)}
+.card .ico{font-size:30px;display:block;margin-bottom:12px}
+#features{font-family:'Avenir Next',Avenir,'Helvetica Neue',Helvetica,Arial,sans-serif}
+#features h3{letter-spacing:-.02em}
+.card-img{display:block;width:120px;height:120px;object-fit:cover;border-radius:50%;margin:0 auto 16px;box-shadow:0 10px 24px rgba(120,90,50,.25);border:3px solid rgba(255,255,255,.8)}
+@media (prefers-reduced-motion: no-preference){
+.card-img{animation:cardfloat 4s ease-in-out infinite}
+#features .card:nth-child(2) .card-img{animation-delay:.4s}
+#features .card:nth-child(3) .card-img{animation-delay:.8s}
+#features .card:nth-child(4) .card-img{animation-delay:1.2s}
+#features .card:nth-child(5) .card-img{animation-delay:1.6s}
+#features .card:nth-child(6) .card-img{animation-delay:2s}
+@keyframes cardfloat{0%,100%{transform:translateY(0) scale(1)}50%{transform:translateY(-8px) scale(1.05)}}
+}
+.card h3{font-size:19px;margin-bottom:8px}
+.card p{font-size:15px;color:var(--ink-soft)}
+
+/* ---- Steps ---- */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;counter-reset:st}
+.step{background:rgba(255,255,255,.65);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.7);border-radius:20px;padding:30px 26px;position:relative}
+.step::before{counter-increment:st;content:counter(st);position:absolute;top:-22px;left:22px;width:44px;height:44px;border-radius:50%;background:var(--ink);color:var(--ivory);display:flex;align-items:center;justify-content:center;font-size:20px;font-weight:bold}
+.step h3{margin:8px 0 8px;font-size:19px}
+.step p{font-size:15px;color:var(--ink-soft)}
+
+/* ---- Pricing ---- */
+.price-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;max-width:760px;margin:0 auto}
+.price{background:rgba(255,255,255,.65);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.7);border-radius:20px;padding:36px 32px}
+.price.pro{background:var(--ink);color:var(--ivory);border-color:var(--ink)}
+.price.pro p,.price.pro li{color:#D8D2C6}
+.price h3{font-size:22px;margin-bottom:4px}
+.price .amt{font-size:46px;font-weight:bold;letter-spacing:-1px;margin:10px 0}
+.price .amt small{font-size:16px;font-weight:normal}
+.price ul{list-style:none;margin:18px 0 26px}
+.price li{padding:7px 0;font-size:15px;border-bottom:1px dashed var(--line)}
+.price.pro li{border-color:#444}
+.price li::before{content:"✓ ";color:var(--green);font-weight:bold}
+.price.pro li::before{color:var(--accent-soft)}
+.tag{display:inline-block;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;background:var(--accent-soft);color:var(--accent);border-radius:99px;padding:4px 14px}
+
+/* ---- FAQ ---- */
+.faq{max-width:720px;margin:0 auto}
+.faq details{background:rgba(255,255,255,.65);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.7);border-radius:16px;margin-bottom:12px;padding:18px 22px}
+.faq summary{cursor:pointer;font-size:17px;font-weight:bold}
+.faq p{margin-top:10px;font-size:15px;color:var(--ink-soft)}
+
+/* ---- CTA + Footer ---- */
+.cta-band{background:var(--ink);color:var(--ivory);border-radius:20px;padding:56px 32px;text-align:center;margin-bottom:72px;position:relative;overflow:hidden}
+.cta-band>*{position:relative;z-index:1}
+.cta-band h2{font-size:clamp(26px,4vw,38px);margin-bottom:12px}
+.cta-band p{color:#CFC9BC;margin-bottom:26px;font-size:17px}
+footer{border-top:1px solid var(--line);padding:34px 0;text-align:center;color:var(--ink-soft);font-size:14px}
+footer a{color:var(--ink-soft)}
+.foot-logo{height:20px;width:auto;vertical-align:-4px}
+
+/* ============================================
+   AUDIT APP — inside #app section
+   ============================================ */
+#app{position:relative;padding:20px 0 72px}
+#app .app-orb{position:absolute;border-radius:50%;filter:blur(2px);opacity:.55;z-index:0;pointer-events:none;animation:app-bob 7s ease-in-out infinite}
+#app .app-orb.a1{width:150px;height:150px;top:8%;left:-40px;background:radial-gradient(circle at 35% 30%,rgba(255,255,255,.9),rgba(207,195,240,.55) 60%,rgba(207,195,240,.15));box-shadow:0 12px 40px rgba(150,130,200,.35),inset -8px -10px 24px rgba(150,130,200,.3)}
+#app .app-orb.a2{width:90px;height:90px;top:55%;right:-20px;background:radial-gradient(circle at 35% 30%,rgba(255,255,255,.95),rgba(216,228,210,.6) 60%,rgba(216,228,210,.15));box-shadow:0 10px 32px rgba(120,150,120,.3),inset -6px -8px 18px rgba(120,150,120,.28)}
+#app .app-orb.a3{width:60px;height:60px;bottom:10%;left:12%;background:radial-gradient(circle at 35% 30%,rgba(255,255,255,.95),rgba(239,217,198,.65) 60%,rgba(239,217,198,.15));box-shadow:0 8px 24px rgba(190,150,120,.3),inset -5px -6px 14px rgba(190,150,120,.28)}
+@keyframes app-bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-18px)}}
+
+.app-container{max-width:1100px;margin:0 auto;position:relative;z-index:1}
+.app-container .score-card,.app-container .stat-card,.app-container .app-issue,.app-container .app-fix,.app-container .tool-box,.app-container .app-details{background:rgba(255,255,255,.55);backdrop-filter:blur(18px) saturate(160%);-webkit-backdrop-filter:blur(18px) saturate(160%);border:1px solid rgba(255,255,255,.7);box-shadow:0 8px 32px rgba(90,70,50,.12)}
+.app-container .score-card.seo{background:linear-gradient(135deg,rgba(207,195,240,.5),rgba(255,255,255,.55))}
+.app-container .score-card.aeo{background:linear-gradient(135deg,rgba(216,228,210,.5),rgba(255,255,255,.55))}
+.app-container .score-card.geo{background:linear-gradient(135deg,rgba(239,217,198,.5),rgba(255,255,255,.55))}
+.app-container .stat-card,.app-container .app-issue,.app-container .app-fix{border-radius:16px}
+
+.app-topbar{text-align:center;margin-bottom:20px}
+.app-brand{justify-content:center;margin-bottom:14px}
+.app-brand .brand-logo{width:56px;height:60px}
+.app-brand .brand-name{font-size:30px}
+.app-topbar h1{font-size:clamp(38px,6vw,62px);line-height:1.08;letter-spacing:-.02em;font-optical-sizing:auto;margin-bottom:12px}
+.app-subtitle{color:var(--ink-soft);font-size:19px;margin-bottom:24px;text-align:center}
+.app-input-row{display:flex;gap:12px;margin-bottom:24px;flex-wrap:wrap;justify-content:center}
+.app-input-row input{flex:1;min-width:200px;padding:12px 16px;background:rgba(255,255,255,.7);border:1px solid var(--line);border-radius:16px;color:var(--ink);font-size:15px;outline:none;transition:border .2s,box-shadow .2s}
+.app-input-row input:focus{border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-soft)}
+.app-input-row button{padding:8px 18px;background:var(--ink);border:1px solid var(--ink);color:var(--ivory);box-shadow:0 12px 30px rgba(35,37,39,.35);border-radius:10px;font-family:Georgia,'Times New Roman',serif;font-size:14px;line-height:1.3;font-weight:800;letter-spacing:-.01em;cursor:pointer;white-space:nowrap;transition:all .2s;position:relative;overflow:hidden;isolation:isolate}
+.app-input-row button::after{content:"";position:absolute;inset:-2px;background:linear-gradient(110deg,transparent 30%,rgba(255,255,255,.4) 50%,transparent 70%);transform:translateX(-120%);animation:shine 2.8s ease-in-out infinite;pointer-events:none}
+.app-input-row button:hover{background:#0d0d0d;color:var(--ivory);transform:scale(1.04)}
+.app-input-row button:disabled{opacity:.5;cursor:not-allowed;transform:none}
+.app-crawl-row{display:flex;gap:8px;align-items:center;justify-content:center;font-family:-apple-system,'Segoe UI',Inter,Roboto,sans-serif;font-size:14.5px;font-weight:500;letter-spacing:-.01em;color:var(--ink-soft);margin:-12px 0 24px;flex-wrap:wrap;text-align:center}
+.app-crawl-row input[type=number]{width:60px;padding:6px 8px;border:1px solid var(--line);border-radius:6px;font-size:13px}
+.pro-badge{font-size:11px;font-weight:700;padding:3px 10px;border-radius:9999px;background:var(--ink);color:#fff;letter-spacing:.05em}
+.pro-note{background:var(--accent-soft);border:1px solid var(--accent);border-radius:8px;padding:12px 16px;font-size:13px;margin-bottom:12px}
+.app-loading{display:none;text-align:center;padding:48px;color:var(--ink-soft)}
+.app-loading.show{display:block}
+.app-spinner{width:40px;height:40px;border:3px solid var(--line);border-top-color:var(--accent);border-radius:50%;animation:spin 1s linear infinite;margin:0 auto 16px}
+@keyframes spin{to{transform:rotate(360deg)}}
+.scores{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:24px}
+.score-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:20px;text-align:center;position:relative;overflow:hidden}
+.score-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px}
+.score-card.seo::before{background:var(--accent)}
+.score-card.aeo::before{background:var(--green)}
+.score-card.geo::before{background:var(--yellow)}
+.score-card.overall::before{background:linear-gradient(90deg,var(--accent),var(--green),var(--yellow))}
+.score-label{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--ink-soft);margin-bottom:8px}
+.score-value{font-size:42px;font-weight:800}
+.stats-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:24px}
+.stat-card{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:14px 16px}
+.stat-label{font-size:12px;color:var(--ink-soft);margin-bottom:4px}
+.stat-value{font-size:15px;font-weight:600}
+.issues-section{margin-bottom:24px}
+.issues-section h3{font-size:18px;font-weight:700;margin-bottom:12px;display:flex;align-items:center;gap:8px}
+.issues-section h3 .badge{font-size:12px;padding:2px 8px;border-radius:9999px;font-weight:500}
+.app-issue{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:14px 16px;margin-bottom:8px;display:flex;gap:12px;align-items:flex-start}
+.issue-severity{width:8px;height:8px;border-radius:50%;margin-top:6px;flex-shrink:0}
+.issue-severity.critical{background:var(--red)}
+.issue-severity.warning{background:var(--yellow)}
+.issue-severity.info{background:var(--accent)}
+.issue-content{flex:1}
+.issue-desc{font-size:14px;margin-bottom:4px}
+.issue-fix-text{font-size:13px;color:var(--ink-soft)}
+.issue-fix-text strong{color:var(--green)}
+.issue-points{font-size:12px;color:var(--accent);font-weight:600;white-space:nowrap;margin-top:2px}
+.top-fixes{margin-bottom:24px}
+.top-fixes h3{font-size:18px;font-weight:700;margin-bottom:12px}
+.app-fix{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:12px 16px;margin-bottom:8px;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.fix-action{font-size:14px;flex:1;min-width:200px}
+.fix-meta{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+.fix-category{font-size:11px;padding:2px 8px;border-radius:9999px;background:var(--accent);color:#fff;font-weight:500}
+.fix-difficulty{font-size:12px;color:var(--ink-soft)}
+.fix-impact{font-size:12px;color:var(--green);font-weight:600}
+.app-export-row{display:flex;gap:12px;margin-bottom:24px;flex-wrap:wrap}
+.app-export-row button{padding:10px 20px;background:rgba(255,255,255,.6);border:1px solid var(--line);border-radius:10px;color:var(--ink);font-size:13px;cursor:pointer;transition:all .2s}
+.app-export-row button:hover{border-color:var(--accent);color:var(--accent)}
+.tool-box{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:20px;margin-bottom:20px}
+.tool-box h3{font-size:17px;font-weight:700;margin-bottom:4px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.tool-box p.desc{font-size:13px;color:var(--ink-soft);margin-bottom:12px}
+.tool-box .app-input-row{margin-bottom:0}
+.app-hidden{display:none}
+#appResult{display:none}
+#appResult.show{display:block}
+.app-details{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:16px}
+.app-details summary{cursor:pointer;font-weight:600;font-size:14px;margin-bottom:8px}
+.app-details pre{font-size:12px;color:var(--ink-soft);white-space:pre-wrap;word-break:break-all;max-height:300px;overflow-y:auto}
+.data-row{font-size:13px;padding:8px 0;border-bottom:1px solid var(--ivory2)}
+.data-row:last-child{border-bottom:none}
+.data-row small{color:var(--ink-soft)}
+@media(max-width:760px){.grid,.steps{grid-template-columns:1fr}.stats-in{grid-template-columns:repeat(2,1fr)}.price-grid{grid-template-columns:1fr}.demo-row{flex-direction:column}.scores{grid-template-columns:1fr 1fr}.stats-grid{grid-template-columns:1fr}#app .app-orb{display:none}.brand-logo{width:34px;height:38px}.brand-name{font-size:19px}.app-input-row{flex-direction:column;align-items:stretch}.app-input-row input{min-width:0;width:100%;font-size:16px}.app-input-row button{width:100%;padding:14px;font-size:16px}.app-crawl-row{flex-direction:column;gap:6px}.score-value{font-size:32px}.score-card{padding:14px 12px}.app-issue{flex-direction:column;gap:6px}.issue-points{align-self:flex-start}.stat-card{padding:10px 12px}.stat-value{font-size:14px}.price .amt{font-size:34px}.cta-band{padding:36px 20px}.app-container{padding:0 12px}.app-topbar h1{font-size:clamp(28px,7vw,42px)}.app-subtitle{font-size:16px}}
+@media(max-width:480px){.scores{grid-template-columns:1fr}.score-value{font-size:28px}.stats-grid{grid-template-columns:1fr 1fr}.price .amt{font-size:28px}}
+@media (prefers-reduced-transparency:reduce){#app .app-orb{display:none}}
+@media (prefers-reduced-motion:reduce){#app .app-orb{animation:none}.app-input-row button::after{display:none}}
+@media (prefers-contrast:more){.app-container h1 em{background:none;color:var(--ink);-webkit-text-fill-color:var(--ink)}}
+</style>
+<meta name="google-site-verification" content="22KPeivVSHxqFkWd04jRAZRfucgGDB6hj1NoQ-VAbsQ" />
+<script>window.BEFIRST_API='https://befirst-backend.onrender.com';</script>
+</head>
+<body>
+
+<!-- ========== LANDING CONTENT ========== -->
+<div id="landing">
+<!-- ========== LANDING: NAV ========== -->
+<nav><div class="wrap nav-in">
+<a class="brand" href="#" aria-label="BeFirst home"><img class="brand-logo" src="BF_Logo_Reference.svg" alt="BeFirst SEO logo" /><span class="brand-name">Be<strong>First</strong></span></a>
+<div class="nav-links sans">
+<a href="#features">Features</a><a href="#how">How it works</a><a href="#pricing">Pricing</a><a href="/about">About</a><a href="/blog">Blog</a><a href="#faq">FAQ</a>
+<a class="btn liquid shimmer sans" href="/app" style="padding:9px 20px">Open app</a>
+</div></div></nav>
+
+<!-- ========== LANDING: HERO ========== -->
+<header class="hero wrap" id="BeFirst">
+<div class="blob b1" aria-hidden="true"></div><div class="blob b2" aria-hidden="true"></div>
+<div class="orb glass o1" aria-hidden="true"></div><div class="orb lav o2" aria-hidden="true"></div><div class="orb drop o3" aria-hidden="true"></div><div class="orb silver o4" aria-hidden="true"></div><div class="orb ring o5" aria-hidden="true"></div>
+<div class="eyebrow sans reveal">BeFirst · Free SEO audit tool</div>
+<h1 class="reveal d1">Find out why your site <em>isn't ranking</em>, in 60 seconds.</h1>
+<p class="sub reveal d2">Paste any URL. Get a grade from A+ to F, plus the exact fixes: titles, speed, keywords, broken links. Free with email signup.</p>
+<div class="demo-box liquid reveal d3">
+<div class="demo-row sans">
+<input id="demoUrl" type="url" placeholder="https://yoursite.com" aria-label="Website URL to audit">
+<button class="btn accent liquid sans shimmer" id="demoBtn" onclick="runDemo()">Get my grade</button>
+</div>
+<div class="demo-note sans">Single-page audit · Free with signup · Results below</div>
+<div id="demoResult" class="sans"></div>
+</div>
+</header>
+
+<!-- ========== LANDING: STATS ========== -->
+<div class="stats"><div class="wrap stats-in sans">
+<div class="stat reveal"><b data-count="20">0</b><span>SEO checks per audit</span></div>
+<div class="stat reveal d1"><b data-count="60">0</b><span>seconds per audit</span></div>
+<div class="stat reveal d2"><b data-count="100">0</b><span>% free, email signup</span></div>
+<div class="stat reveal d3"><b data-count="6">0</b><span>grades, A+ to F</span></div>
+</div></div>
+
+<!-- ========== LANDING: MARQUEE ========== -->
+<div class="marquee sans" aria-label="Website platforms B&F can audit"><div class="marquee-track">
+<span><img class="mq-logo" src="img/logos/wordpress.svg" alt="Wordpress logo" width="30" height="30"><b>WordPress</b></span><span><img class="mq-logo" src="img/logos/shopify.svg" alt="Shopify logo" width="30" height="30"><b>Shopify</b></span><span><img class="mq-logo" src="img/logos/wix.svg" alt="Wix logo" width="30" height="30"><b>Wix</b></span><span><img class="mq-logo" src="img/logos/squarespace.svg" alt="Squarespace logo" width="30" height="30"><b>Squarespace</b></span><span><img class="mq-logo" src="img/logos/webflow.svg" alt="Webflow logo" width="30" height="30"><b>Webflow</b></span><span><img class="mq-logo" src="img/logos/blogger.svg" alt="Blogger logo" width="30" height="30"><b>Blogger</b></span><span><img class="mq-logo" src="img/logos/ghost.svg" alt="Ghost logo" width="30" height="30"><b>Ghost</b></span><span><img class="mq-logo" src="img/logos/framer.svg" alt="Framer logo" width="30" height="30"><b>Framer</b></span><span aria-hidden="true"><img class="mq-logo" src="img/logos/wordpress.svg" alt="Wordpress logo" width="30" height="30"><b>WordPress</b></span><span aria-hidden="true"><img class="mq-logo" src="img/logos/shopify.svg" alt="Shopify logo" width="30" height="30"><b>Shopify</b></span><span aria-hidden="true"><img class="mq-logo" src="img/logos/wix.svg" alt="Wix logo" width="30" height="30"><b>Wix</b></span><span aria-hidden="true"><img class="mq-logo" src="img/logos/squarespace.svg" alt="Squarespace logo" width="30" height="30"><b>Squarespace</b></span><span aria-hidden="true"><img class="mq-logo" src="img/logos/webflow.svg" alt="Webflow logo" width="30" height="30"><b>Webflow</b></span><span aria-hidden="true"><img class="mq-logo" src="img/logos/blogger.svg" alt="Blogger logo" width="30" height="30"><b>Blogger</b></span><span aria-hidden="true"><img class="mq-logo" src="img/logos/ghost.svg" alt="Ghost logo" width="30" height="30"><b>Ghost</b></span><span aria-hidden="true"><img class="mq-logo" src="img/logos/framer.svg" alt="Framer logo" width="30" height="30"><b>Framer</b></span>
+</div></div>
+
+<!-- ========== LANDING: WHAT IS SEO ========== -->
+<section class="block wrap" id="what" style="padding-top:56px;padding-bottom:0">
+<div class="card reveal" style="text-align:center">
+<h2 class="sec" style="font-size:26px">What is an SEO audit?</h2>
+<p style="color:var(--ink-soft);font-size:17px;max-width:640px;margin:0 auto">An SEO audit is a health check of a web page. It tests titles, descriptions, speed, mobile-friendliness and content against <a href="https://developers.google.com/search/docs/essentials">Google's ranking rules</a>, then lists exactly what to fix.</p>
+</div>
+</section>
+
+<!-- ========== LANDING: FEATURES ========== -->
+<section class="block wrap" id="features">
+<h2 class="sec reveal">Everything a ₹10,000/month tool does</h2>
+<p class="lead reveal d1">Built on <a href="https://developers.google.com/search/docs/essentials">Google's own public rules</a>. The checks clients pay agencies for, free in <a href="/app">the app</a>.</p>
+<div class="grid">
+<div class="card reveal"><img class="card-img" src="img/grade.jpg" alt="Graduation caps for SEO grades" loading="lazy"><h3>Grade A+ to F</h3><p>One clear grade from 20+ checks: titles, meta, headings, speed, mobile, schema. Know exactly where you stand.</p></div>
+<div class="card reveal d1"><img class="card-img" src="img/keywords.jpg" alt="Typing keyword research on a laptop" loading="lazy"><h3>Keyword ideas</h3><p>Discovers what real people type into Google around your topic, so you target words with traffic.</p></div>
+<div class="card reveal d2"><img class="card-img" src="img/speed.jpg" alt="Hourglass for page speed" loading="lazy"><h3>Real Google speed data</h3><p>Lab performance scores straight from Google's PageSpeed API, the same numbers agencies report.</p></div>
+<div class="card reveal"><img class="card-img" src="img/rank.jpg" alt="Rising graph for rank tracking" loading="lazy"><h3>Rank check</h3><p>See which position any site holds for any keyword. Track it over time and watch yourself climb.</p></div>
+<div class="card reveal d1"><img class="card-img" src="img/links.jpg" alt="Handshake for link partnerships" loading="lazy"><h3>Link opportunities</h3><p>Finds unlinked brand mentions, risky outlinks and broken-link leads with a ready outreach pitch.</p></div>
+<div class="card reveal d2"><img class="card-img" src="img/writer.jpg" alt="Fountain pen writing an article" loading="lazy"><h3>AI article writer <span class="tag sans">Pro</span></h3><p>Full SEO article with title, meta, slug, headings and FAQ schema, ready to publish.</p></div>
+</div>
+</section>
+
+<!-- ========== LANDING: HOW IT WORKS ========== -->
+<section class="block wrap" id="how" style="padding-top:0">
+<h2 class="sec reveal">How it works</h2>
+<p class="lead reveal d1">Three steps. No learning curve.</p>
+<div class="steps">
+<div class="step reveal"><h3>Paste your URL</h3><p>Any public page works: blog, shop, portfolio, business site. Nothing to install.</p></div>
+<div class="step reveal d1"><h3>Get your grade</h3><p>About a minute later you see A+ to F with every issue listed in plain words.</p></div>
+<div class="step reveal d2"><h3>Fix and re-check</h3><p>Apply the fixes, run the audit again, watch the grade climb. Track rankings monthly.</p></div>
+</div>
+</section>
+
+<!-- ========== LANDING: PRICING ========== -->
+<section class="block wrap" id="pricing" style="padding-top:0">
+<h2 class="sec reveal">Simple pricing</h2>
+<p class="lead reveal d1">Start free. Pay only for what client work demands.</p>
+<div class="price-grid" style="grid-template-columns:1fr 1fr 1fr;max-width:1080px">
+<div class="price reveal"><span class="tag sans">Free</span><div class="amt">₹0</div>
+<ul class="sans"><li>Single-page SEO audit + grade</li><li>Google PageSpeed lab data</li></ul>
+<a class="btn liquid shimmer sans" href="/app">Start free</a></div>
+<div class="price reveal d1"><span class="tag sans">Starter</span><h3 style="margin-top:10px">For site owners</h3><div class="amt"><span class="pr" data-usd="$5">₹99</span><small>/month</small></div>
+<ul class="sans"><li>Everything in Free</li><li>Keyword ideas + rank check</li><li>Brand check + generators</li><li>Outlink + broken-link leads</li></ul>
+<a class="btn liquid shimmer sans" href="#signup-section">Get Starter, coming soon</a></div>
+<div class="price pro reveal d2"><span class="tag sans">Pro</span><h3 style="margin-top:10px">For freelancers &amp; agencies</h3><div class="amt"><span class="pr" data-usd="$15">₹799</span><small>/month</small></div>
+<ul class="sans"><li>Everything in Starter</li><li>Full-site crawl (up to 100 pages)</li><li>Side-by-side competitor compare</li><li>AI article writer with FAQ schema</li><li>Rank tracking over time</li><li>Unlinked-mention finder</li></ul>
+<a class="btn accent liquid shimmer sans" href="#signup-section" style="color:#fff">Join waitlist, coming soon</a></div>
+</div>
+</section>
+
+<!-- ========== LANDING: SIGNUP ========== -->
+<section class="block wrap" id="signup-section" style="padding-top:0">
+<div class="wrap"><div class="cta-band reveal">
+<h2>Get SEO tips + launch updates</h2>
+<p class="sans">One useful email a week. No spam, unsubscribe anytime.</p>
+<div class="demo-row sans" style="justify-content:center"><input id="signupEmail" type="email" placeholder="you@example.com" style="flex:1;min-width:220px;max-width:320px"><button class="btn accent liquid shimmer" id="signupBtn" onclick="runSignup()">Sign up free</button></div>
+<p class="sans" id="signupMsg" style="margin-top:10px"></p>
+</div></div>
+</section>
+
+<!-- ========== LANDING: CTA ========== -->
+<div class="wrap"><div class="cta-band reveal">
+<h2>Your competitors already know their grade.<br>Do you?</h2>
+<p class="sans">One URL. One minute. Zero rupees.</p>
+<a class="btn accent liquid shimmer sans" href="/app">Audit my site free</a>
+</div></div>
+
+<!-- ========== LANDING: FAQ ========== -->
+<section class="block wrap" id="faq" style="padding-top:0">
+<h2 class="sec reveal">Questions, answered</h2>
+<p class="lead reveal d1">The short version.</p>
+<div class="faq">
+<details class="reveal"><summary>Is this SEO audit really free?</summary><p>Yes. Single-page audits with a full A+ to F grade are free. Starter (<span class="pr" data-usd="$5/month">₹99/month</span>) unlocks keyword ideas, rank checks and generators; Pro (<span class="pr" data-usd="$15/month">₹799/month</span>) adds full-site crawl, compare, the AI article writer and rank tracking.</p></details>
+<details class="reveal d1"><summary>How is the grade calculated?</summary><p>Your page is checked against 20+ rules from Google's public Search Essentials: titles, meta tags, headings, speed, mobile, schema and more. Scores map to grades A+ to F.</p></details>
+<details class="reveal d2"><summary>Do I need to install anything?</summary><p>No. Paste any URL in the box above and get your grade in about a minute. Nothing to install, just your email to run the free audit.</p></details>
+<details class="reveal d3"><summary>Does it work for any website?</summary><p>Yes, any public page: blogs, shops, portfolios, business sites. If Google can see it, we can audit it.</p></details>
+</div>
+</section>
+
+<!-- ========== LANDING: FOOTER ========== -->
+<footer><div class="wrap sans">BeFirst <img class="foot-logo" src="BF_Logo_Reference.svg" alt="B&F logo">, be first on Google · <a href="/app">Open the app</a> · Grades follow Google's public Search Essentials · <a href="https://www.linkedin.com/in/barirasania">LinkedIn</a> · <a href="https://github.com/Barira7">GitHub</a> · <a href="/privacy">Privacy</a> · <a href="/terms">Terms</a></div></footer>
+
+</div><!-- end landing -->
+
+<!-- ========== FULL AUDIT APP ========== -->
+<section id="app">
+<div class="app-orb a1" aria-hidden="true"></div>
+<div class="app-orb a2" aria-hidden="true"></div>
+<div class="app-orb a3" aria-hidden="true"></div>
+<div class="app-container">
+<div class="app-topbar">
+<a class="brand app-brand" href="#" aria-label="BeFirst home"><img class="brand-logo" src="BF_Logo_Reference.svg" alt="BeFirst SEO logo"><span class="brand-name">Be<strong>First</strong></span></a>
+<h2>SEO / AEO / GEO <em>Audit</em></h2>
+<p class="app-subtitle">Analyze any website for Search Engine, Answer Engine, and Generative Engine optimization</p>
+</div>
+
+<div class="app-input-row">
+<input type="text" id="urlInput" placeholder="Enter website URL (e.g. stripe.com)" />
+<input type="email" id="emailInput" placeholder="Your email (free audit needs signup)" style="max-width:280px" />
+<button id="auditBtn" onclick="runAudit()">Audit Website</button>
+</div>
+<div class="app-crawl-row">
+<label><input type="checkbox" id="crawlCheck" /> Audit full site (crawls up to</label>
+<input type="number" id="maxPages" value="10" min="2" max="100" />
+<label for="maxPages">pages, one AI call)</label>
+<span class="pro-badge">PRO</span>
+</div>
+
+<div class="app-loading" id="appLoading">
+<div class="app-spinner"></div>
+<div>Fetching page and analyzing with AI...</div>
+</div>
+
+<div id="appResult">
+<div class="guidelines-line" id="guidelinesLine" style="font-size:12px;opacity:.75;margin-bottom:12px"></div>
+<div class="scores" id="scores"></div>
+<div class="stats-grid" id="stats"></div>
+<div class="top-fixes" id="topFixes"></div>
+<div class="top-fixes" id="keywordIdeas"></div>
+<div class="issues-section" id="sitePages"></div>
+<div class="issues-section" id="seoIssues"></div>
+<div class="issues-section" id="aeoIssues"></div>
+<div class="issues-section" id="geoIssues"></div>
+
+<div class="tool-box" id="compareBox">
+<h3>Compare with competitor <span class="pro-badge">PRO</span></h3>
+<p class="desc">Side-by-side audit of your site vs a rival, with a winner and score gaps.</p>
+<div class="app-input-row"><input type="text" id="url2Input" placeholder="Competitor URL (e.g. rival.com)" /><button onclick="runCompare()">Compare</button></div>
+<div id="compareResult" style="margin-top:12px"></div>
+</div>
+
+<div class="app-export-row">
+<button onclick="exportJSON()">Export JSON</button>
+<button onclick="exportCSV()">Export CSV</button>
+<button onclick="copyReport()">Copy Report</button>
+</div>
+
+<div class="tool-box" id="genBox">
+<h3>Free Generators</h3>
+<p class="desc">SEOptimer-style toolbox: ready-to-upload files and tags.</p>
+<div class="app-input-row"><input type="text" id="genDomain" placeholder="Your domain (e.g. mysite.com) for robots.txt" /><button onclick="runGenerate('robots')">Make robots.txt</button></div>
+<div class="app-input-row"><input type="text" id="genUrls" placeholder="Page URLs, comma separated, for sitemap.xml" /><button onclick="runGenerate('sitemap')">Make sitemap.xml</button></div>
+<div class="app-input-row"><input type="text" id="genTitle" placeholder="Page title (max 60 chars)" /><input type="text" id="genDesc" placeholder="Meta description (max 160 chars)" /><button onclick="runGenerate('meta')">Make meta tags</button></div>
+<pre id="genOut" style="margin-top:12px;font-size:12px;white-space:pre-wrap;word-break:break-all"></pre>
+</div>
+
+<div class="tool-box" id="writerBox">
+<h3>AI Article Writer <span class="pro-badge">PRO</span></h3>
+<p class="desc">seo.ai-style agent: full SEO article with slug, meta, headings and FAQ schema.</p>
+<div class="app-input-row"><input type="text" id="artTopic" placeholder="Article topic (e.g. best budget skincare routine)" /><input type="text" id="artKw" placeholder="Keywords, comma separated (optional)" /></div>
+<div class="app-input-row"><input type="number" id="artWords" value="600" min="200" max="2000" step="100" style="max-width:120px" /><button onclick="runArticle()">Write article</button></div>
+<div id="artOut" style="margin-top:12px;font-size:13px"></div>
+<h3 style="margin-top:20px">Meta Fixer <span class="pro-badge">PRO</span></h3>
+<p class="desc">Paste your article, get a pixel-perfect title (≤580px) + description (≤920px).</p>
+<div class="app-input-row"><textarea id="metaArt" rows="4" placeholder="Paste your article text here (a few sentences minimum)..." style="width:100%;padding:10px 14px;border:1px solid var(--line);border-radius:12px;font:inherit;font-size:14px;resize:vertical"></textarea></div>
+<div class="app-input-row"><input type="text" id="metaKw" placeholder="Main keyword (optional)" /><button onclick="runMetaFix()">Fix my meta</button></div>
+<div id="metaOut" style="margin-top:12px;font-size:13px"></div>
+</div>
+
+<div class="tool-box" id="brandBox">
+<h3>AI-Visibility Brand Check</h3>
+<p class="desc">Does AI recommend your brand? Free check with competitor names and a tip.</p>
+<div class="app-input-row"><input type="text" id="brandName" placeholder="Brand name (e.g. Rhode Beauty)" /><input type="text" id="brandCat" placeholder="Category (e.g. skincare, optional)" /><button onclick="runBrand()">Check visibility</button></div>
+<div id="brandOut" style="margin-top:12px;font-size:13px"></div>
+</div>
+
+<div class="tool-box" id="rankBox">
+<h3>Rank Check <small style="font-weight:400;color:var(--ink-soft)">(free, via Bing)</small></h3>
+<p class="desc">Where does a domain rank for a keyword? Track + save is PRO.</p>
+<div class="app-input-row"><input type="text" id="rankKw" placeholder="Keyword (e.g. best skincare routine)" /><input type="text" id="rankDom" placeholder="Your domain (e.g. mysite.com)" /><button onclick="runRank()">Check rank</button><button onclick="runTrack()">Track + save</button></div>
+<div id="rankOut" style="margin-top:12px;font-size:13px"></div>
+<div id="trackOut" style="margin-top:12px;font-size:13px"></div>
+</div>
+
+<div class="tool-box" id="outlinksBox">
+<h3>Outlink Inspector</h3>
+<p class="desc">Every outside site a page links to, ranked by count. Spot risky or off-topic links.</p>
+<div class="app-input-row"><input type="text" id="outUrl" placeholder="Page URL (e.g. mysite.com/blog/post)" /><button onclick="runOutlinks()">Inspect outlinks</button></div>
+<div id="outOut" style="margin-top:12px;font-size:13px"></div>
+</div>
+
+<div class="tool-box" id="brokenBox">
+<h3>Broken-Link Leads</h3>
+<p class="desc">Dead outside links on a page — each one is an outreach lead with a ready pitch.</p>
+<div class="app-input-row"><input type="text" id="brokenUrl" placeholder="Page URL to scan for dead links" /><button onclick="runBrokenLeads()">Find leads</button></div>
+<div id="brokenOut" style="margin-top:12px;font-size:13px"></div>
+</div>
+
+<div class="tool-box" id="mentionsBox">
+<h3>Unlinked Mention Finder <span class="pro-badge">PRO</span></h3>
+<p class="desc">Pages that mention a brand but don't link to it — warm outreach leads.</p>
+<div class="app-input-row"><input type="text" id="menBrand" placeholder="Brand name (e.g. Rhode Beauty)" /><input type="text" id="menDom" placeholder="Brand domain (e.g. rhodeskin.com)" /><button onclick="runMentions()">Find mentions</button></div>
+<div id="menOut" style="margin-top:12px;font-size:13px"></div>
+</div>
+
+<!-- Raw Data debug block removed -->
+</div>
+</div>
+</section>
+
+<!-- ========== LANDING JS ========== -->
+<script>
+var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+var navEl = document.querySelector('nav');
+addEventListener('scroll', function(){navEl.classList.toggle('scrolled', scrollY > 8);}, {passive:true});
+var io = new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}})},{threshold:.12});
+document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
+var cio = new IntersectionObserver(function(es){es.forEach(function(e){
+var el=e.target;
+if(!e.isIntersecting){el.dataset.seen='';el.classList.remove('landed');return;}
+if(el.dataset.seen)return;el.dataset.seen='1';
+var end=+el.dataset.count,idx=+el.dataset.i||0,t0=null;
+if(reduced){el.textContent=(end===60?'~':'')+end+(end===20?'+':'');return;}
+function fmt(v){return (end===60?'~':'')+v+(end===20?'+':'');}
+function tick(t){if(!t0)t0=t;var p=Math.min((t-t0)/1200,1),v=Math.round(end*(1-Math.pow(1-p,4)));
+el.textContent=fmt(v);if(p<1){requestAnimationFrame(tick);}else{el.classList.add('landed');}}
+setTimeout(function(){requestAnimationFrame(tick);},idx*180);})},{threshold:.4});
+document.querySelectorAll('[data-count]').forEach(function(el,i){el.dataset.i=i;cio.observe(el);});
+try{var _last=JSON.parse(localStorage.getItem('befirst_last')||'null');
+if(_last&&_last.html&&(Date.now()-_last.at)<7*864e5){var _lb=document.getElementById('demoResult');_lb.style.display='block';_lb.innerHTML=_last.html;}}catch(e){}
+
+function bar(label,val,color){return '<div class="bar-row"><span>'+label+'</span><div class="bar-track"><div class="bar-fill" data-w="'+val+'"'+(color?' style="background:'+color+'"':'')+'></div></div><b>'+val+'</b></div>';}
+function runDemo(){
+var u=document.getElementById('demoUrl').value.trim();
+if(!u){document.getElementById('demoUrl').focus();return;}
+if(!/^https?:\/\//i.test(u))u='https://'+u;
+var box=document.getElementById('demoResult');box.style.display='block';
+var savedEm=localStorage.getItem('befirst_email')||'';
+if(!savedEm){box.innerHTML='<p><b>Your free audit is ready, where should we send it?</b></p><p><input id="demoEmail" type="email" placeholder="you@example.com" style="padding:10px 14px;border:1px solid #ddd;border-radius:10px;width:min(280px,80%)"> <button class="btn liquid shimmer sans" onclick="unlockDemo()">Unlock my free audit</button></p>';return;}
+box.innerHTML='<p><span class="spin"></span> Auditing… about a minute for full Google speed data.</p>';
+fetch(window.BEFIRST_API+'/audit',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({url:u,email:savedEm})})
+.then(function(r){return r.json().then(function(j){return {st:r.status,j:j};});})
+.then(function(r){
+if(r.st===402&&(r.j||{}).error==='signup_required'){localStorage.removeItem('befirst_email');box.innerHTML='<p>Please sign up with your email first, <a href="#signup-section">join here</a>, then run the audit again.</p>';return;}
+if(r.st===402){box.innerHTML='<p>This check is a Pro feature. The free single-page audit above covers the rest.</p>';return;}
+if(r.j&&r.j.ok===false){box.innerHTML='<p>Audit failed: '+((r.j||{}).error||'could not reach that site')+'. Check the URL and try again.</p>';return;}
+var d=r.j,s=d.scores||{},g=(d.grade||s.grade||'–');
+var gc=g.charAt(0)==='A'?'#2F7D4F':(g.charAt(0)==='F'?'#B4552D':'#8a6d1c');
+var h='<div class="grade-ring"><div class="grade-big" style="border-color:'+gc+';color:'+gc+'">'+g+'</div><div class="bars">'
++bar('SEO',s.seo||0)+(s.aeo!=null?bar('AEO',s.aeo):'')+(s.geo!=null?bar('GEO',s.geo):'')
++'</div></div>';
+var iss=(d.seo_issues||[]).concat(d.aeo_issues||[],d.geo_issues||[]).slice(0,3);
+if(iss.length){h+='<ul class="demo-fixes">';iss.forEach(function(x){h+='<li><b>'+(x.issue||x)+'</b>'+(x.fix?' — '+x.fix:'')+'</li>';});h+='</ul>';}
+h+='<p style="margin-top:14px;text-align:center"><a href="/app" style="color:var(--accent);font-family:\'Avenir Next\',Avenir,\'Helvetica Neue\',sans-serif;font-weight:700;text-decoration:none">Open full report in the app →</a></p>';
+box.innerHTML=h;
+requestAnimationFrame(function(){requestAnimationFrame(function(){
+box.querySelectorAll('.bar-fill').forEach(function(b){b.style.width=b.dataset.w+'%';});
+try{localStorage.setItem('befirst_last',JSON.stringify({url:u,at:Date.now(),html:box.innerHTML}));}catch(e){}});});
+})
+.catch(function(){box.innerHTML='<p>Could not reach that site. Check the URL and try again.</p>';});
+}
+function unlockDemo(){
+var e=document.getElementById('demoEmail').value.trim();
+var box=document.getElementById('demoResult');
+if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(e)){box.innerHTML='<p>Please type a valid email to unlock your free audit.</p>';return;}
+box.innerHTML='<p><span class="spin"></span> Saving your email…</p>';
+fetch(window.BEFIRST_API+'/signup',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:e})})
+.then(function(r){return r.json();})
+.then(function(j){if(j.ok){localStorage.setItem('befirst_email',e.toLowerCase());runDemo();}else{box.innerHTML='<p>That email did not work, try again.</p>';}})
+.catch(function(){box.innerHTML='<p>Could not save right now, try again.</p>';});
+}
+function runSignup(){
+var e=document.getElementById('signupEmail').value.trim();
+var m=document.getElementById('signupMsg');
+if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(e)){m.textContent='Please type a valid email.';return;}
+m.textContent='Saving…';
+fetch(window.BEFIRST_API+'/signup',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:e})})
+.then(function(r){return r.json();})
+.then(function(j){
+if(j.ok){localStorage.setItem('befirst_email',e.toLowerCase());m.textContent='You are in! Watch your inbox for SEO tips.';document.getElementById('signupEmail').value='';}
+else if(j.error==='too_many_requests'){m.textContent='Slow down a little, then try again.';}
+else{m.textContent='That email did not work, try again.';}
+})
+.catch(function(){m.textContent='Could not save right now — try again.';});
+}
+</script>
+<script>
+/* Regional pricing: visitors outside India see USD */
+window.BEFIRST_CUR={code:"INR"};
+(function(){fetch("https://ipapi.co/country/").then(function(r){return r.text();}).then(function(c){
+if(c&&c.trim().toUpperCase()!=="IN"){window.BEFIRST_CUR={code:"USD"};
+document.querySelectorAll(".pr").forEach(function(el){var u=el.getAttribute("data-usd");if(u)el.textContent=u;});
+if(typeof window.__recur==="function"){window.__recur();}}
+}).catch(function(){});})();
+</script>
+
+<!-- ========== APP JS ========== -->
+<script>
+const API = window.BEFIRST_API || (location.hostname ? location.protocol + '//' + location.host : 'http://127.0.0.1:8007');
+function em(){try{return localStorage.getItem('befirst_email')||'';}catch(e){return '';}}
+let lastResult = null;
+const PRO_HTML = `<div class="pro-note">🔒 This needs a paid plan — <strong>Starter <span class="pr" data-usd="$5">$5</span>/mo</strong> or <strong>Pro <span class="pr" data-usd="$15">$15</span>/mo</strong>. <a href="#pricing">See plans</a></div>`;
+function proBlocked(d) { return d && (d.pro_required || d.upgrade || d.upgrade_required); }
+
+async function runAudit() {
+  const url = document.getElementById('urlInput').value.trim();
+  if (!url) return;
+  const email = (document.getElementById('emailInput').value || '').trim();
+  if (!email) { alert('Enter your email first — the free audit needs a quick signup.'); return; }
+  document.getElementById('auditBtn').disabled = true;
+  document.getElementById('appLoading').classList.add('show');
+  document.getElementById('appResult').classList.remove('show');
+  try {
+    const resp = await fetch(API + '/audit', {
+      method: 'POST', headers: {'Content-Type':'application/json'},
+      body: JSON.stringify({url, email, crawl: document.getElementById('crawlCheck').checked,
+        max_pages: parseInt(document.getElementById('maxPages').value) || 10})
+    });
+    const data = await resp.json();
+    if (data.signup_required) { alert('This email is not signed up yet — sign up free on the home page first, then try again.'); return; }
+    if (proBlocked(data)) { alert('Full-site crawl needs Pro (' + ((window.BEFIRST_CUR && window.BEFIRST_CUR.code === "USD") ? "$15" : "₹799") + '/mo). Uncheck it for a free single-page audit.'); return; }
+    if (data.error) { alert('Error: ' + data.error); return; }
+    lastResult = data;
+    renderResult(data);
+    document.getElementById('appResult').classList.add('show');
+  } catch(e) { alert('Failed: ' + e.message); }
+  finally { document.getElementById('auditBtn').disabled = false; document.getElementById('appLoading').classList.remove('show'); }
+}
+
+async function refreshGuidelines(e) {
+  if (e) e.preventDefault();
+  const msg = document.getElementById('refreshMsg');
+  msg.textContent = ' · refreshing...';
+  try {
+    const resp = await fetch(API + '/refresh-guidelines', {method: 'POST'});
+    const data = await resp.json();
+    msg.textContent = data.ok ? ` · refreshed ${data.guidelines_updated} (${data.chars} chars)` : ' · refresh failed, keeping old rules';
+  } catch(err) { msg.textContent = ' · refresh failed, keeping old rules'; }
+}
+
+function renderScore(label, value, cls) {
+  const color = value >= 70 ? 'var(--green)' : value >= 40 ? 'var(--yellow)' : 'var(--red)';
+  return `<div class="score-card ${cls}">
+    <div class="score-label">${label}</div>
+    <div class="score-value" style="color:${color}">${value}</div>
+    <div style="height:4px;background:var(--ivory2);border-radius:2px;margin-top:12px;overflow:hidden"><div style="height:100%;border-radius:2px;width:${value}%;background:${color}"></div></div>
+  </div>`;
+}
+
+function renderResult(d) {
+  const s = d.scores;
+  document.getElementById('guidelinesLine').innerHTML =
+    `Google rules applied (updated ${d.guidelines_updated || 'unknown'}) · <a href="#" onclick="refreshGuidelines(event)">Refresh now</a> <span id="refreshMsg"></span>`;
+  document.getElementById('scores').innerHTML =
+    renderScore('Overall · ' + (s.grade || ''), s.overall, 'overall') +
+    renderScore('SEO', s.seo, 'seo') +
+    renderScore('AEO', s.aeo, 'aeo') +
+    renderScore('GEO', s.geo, 'geo');
+
+  const ps = d.page_stats || {};
+  const rpd = d.raw_page_data || {};
+  const readScore = rpd.readability_score ?? ps.readability_score;
+  document.getElementById('stats').innerHTML = [
+    ['Title Length', (ps.title_length||0)+' chars'],
+    ['Meta Desc', (ps.meta_desc_length||0)+' chars'],
+    ['H1 Tags', ps.h1_count||0],
+    ['H2 Tags', ps.h2_count||0],
+    ['Word Count', ps.word_count||0],
+    ['Images', (ps.images_total||0)+' ('+ (ps.images_no_alt||0)+' missing alt)'],
+    ['Links', ps.links_count||0],
+    ['Schema', (ps.schema_types||[]).join(', ') || 'None'],
+    ['HTML Size', (ps.html_size_kb||0)+' KB'],
+    ['Load Time', (ps.load_time_s!=null?ps.load_time_s+'s':'—')],
+    ['Mobile Viewport', ps.has_viewport?'Yes':'Missing'],
+    ['Redirected', ps.redirected?'Yes':'No'],
+    ['robots.txt', ps.has_robots?'Yes':'Missing'],
+    ['sitemap.xml', ps.has_sitemap?'Yes':'Missing'],
+    ['Custom 404', ps.custom_404_ok?'Yes':'No'],
+    ['Broken Links', (ps.broken_count!=null?ps.broken_count:'—')],
+    ['Grammar Flags', (ps.grammar_issues!=null?ps.grammar_issues:'—')],
+    ['Readability', (readScore!=null&&readScore!==''?readScore+' ('+(rpd.readability_label||'')+')':'—')],
+    ['HTTPS', (rpd.is_https!=null?(rpd.is_https?'Yes':'No — not secure!'):(ps.has_https!=null?(ps.has_https?'Yes':'No — not secure!'):'—'))],
+    ['Noindex tag', (rpd.noindex!=null?(rpd.noindex?'BLOCKED from Google!':'OK, indexable'):(ps.noindex!=null?(ps.noindex?'BLOCKED from Google!':'OK, indexable'):'—'))],
+    ['Favicon', ((rpd.has_favicon??ps.has_favicon)?'Yes':'Missing')],
+    ['Social Profiles', ((rpd.socials||ps.socials||[]).join(', ')||'None found')],
+    ['llms.txt (AI file)', ((rpd.has_llms_txt??ps.has_llms_txt)?'Yes':'Missing')],
+    ['PageSpeed Score', (rpd.pagespeed&&rpd.pagespeed.score!=null?rpd.pagespeed.score+' / 100':(ps.pagespeed_score!=null?ps.pagespeed_score+' / 100':'—'))],
+    ['Largest Paint (LCP)', (rpd.pagespeed&&rpd.pagespeed.lcp_s!=null?rpd.pagespeed.lcp_s+'s'+(rpd.pagespeed.lcp_s>2.5?' — slow!':''):(ps.pagespeed_lcp_s!=null?ps.pagespeed_lcp_s+'s':'—'))],
+    ['Layout Shift (CLS)', (rpd.pagespeed&&rpd.pagespeed.cls!=null?rpd.pagespeed.cls:(ps.pagespeed_cls!=null?ps.pagespeed_cls:'—'))],
+    ['Blocking Time', (rpd.pagespeed&&rpd.pagespeed.tbt_ms!=null?rpd.pagespeed.tbt_ms+'ms':(ps.pagespeed_tbt_ms!=null?ps.pagespeed_tbt_ms+'ms':'—'))],
+  ].map(([l,v]) => `<div class="stat-card"><div class="stat-label">${l}</div><div class="stat-value">${v}</div></div>`).join('');
+
+  const fixes = d.top_fixes || [];
+  document.getElementById('topFixes').innerHTML = fixes.length ?
+    '<h3>Top Fixes</h3>' + fixes.map(f =>
+      `<div class="app-fix"><span class="fix-action">${f.action}</span><div class="fix-meta"><span class="fix-category">${f.category}</span><span class="fix-difficulty">${f.difficulty}</span><span class="fix-impact">${f.impact}</span></div></div>`
+    ).join('') : '';
+
+  const renderIssues = (title, issues, color) => {
+    if (!issues || !issues.length) return '';
+    return `<h3>${title} <span class="badge" style="background:${color}20;color:${color}">${issues.length} issues</span></h3>` +
+      issues.map(i => `<div class="app-issue"><div class="issue-severity ${i.severity}"></div><div class="issue-content"><div class="issue-desc">${i.issue}</div><div class="issue-fix-text"><strong>Fix:</strong> ${i.fix}</div></div><div class="issue-points">+${i.points} pts</div></div>`).join('');
+  };
+
+  document.getElementById('seoIssues').innerHTML = renderIssues('SEO Issues', d.seo_issues, '#B4552D');
+  document.getElementById('aeoIssues').innerHTML = renderIssues('AEO Issues', d.aeo_issues, '#2F7D4F');
+  document.getElementById('geoIssues').innerHTML = renderIssues('GEO Issues', d.geo_issues, '#9A6B0F');
+
+  const ki = d.keyword_ideas || {};
+  const kw = d.keywords || [];
+  document.getElementById('keywordIdeas').innerHTML = kw.length ?
+    '<h3>Keyword Ideas (from Google)</h3><div style="font-size:13px;margin-bottom:6px">Top keywords: <strong>' + kw.join(', ') + '</strong></div>' +
+    Object.entries(ki).filter(([k,v]) => v.length).map(([k,v]) =>
+      `<div class="app-fix"><span class="fix-action">people also search for "${k}":</span><div class="fix-meta"><span>${v.join(' · ')}</span></div></div>`
+    ).join('') : '';
+
+  const pages = d.pages || [];
+  const worst = d.worst_pages || [];
+  document.getElementById('sitePages').innerHTML = pages.length ?
+    `<h3>Crawled Pages <span class="badge">${pages.length} pages</span></h3>` +
+    pages.map(p => p.error ? `<div class="app-issue"><div class="issue-content"><div class="issue-desc">${p.url} — fetch failed</div></div></div>`
+      : `<div class="app-issue"><div class="issue-content"><div class="issue-desc">${p.url}</div><div class="issue-fix-text">title ${p.title_len} chars · ${p.has_meta?'meta ✓':'NO meta'} · h1×${p.h1_count} · ${p.words} words · ${p.images_no_alt} imgs w/o alt · grammar ${p.grammar} · ${p.load_time_s}s</div></div></div>`).join('') +
+    (worst.length ? '<h3>Worst Pages</h3>' + worst.map(w => `<div class="app-fix"><span class="fix-action">${w.url}</span><div class="fix-meta"><span>${w.problem}</span></div></div>`).join('') : '')
+    : '';
+  const dt = d.duplicate_titles || [], dm = d.duplicate_metas || [], thin = d.thin_pages || [];
+  if (dt.length || dm.length || thin.length) {
+    document.getElementById('sitePages').innerHTML += '<h3>Duplicate & Thin Content</h3>' +
+      dt.map(u => `<div class="app-issue"><div class="issue-severity warning"></div><div class="issue-content"><div class="issue-desc">Duplicate title: ${u}</div><div class="issue-fix-text"><strong>Fix:</strong> give each page a unique title</div></div></div>`).join('') +
+      dm.map(u => `<div class="app-issue"><div class="issue-severity warning"></div><div class="issue-content"><div class="issue-desc">Duplicate meta description: ${u}</div><div class="issue-fix-text"><strong>Fix:</strong> write a unique description per page</div></div></div>`).join('') +
+      thin.map(p => `<div class="app-issue"><div class="issue-severity info"></div><div class="issue-content"><div class="issue-desc">Thin page (${p.words} words): ${p.url}</div><div class="issue-fix-text"><strong>Fix:</strong> expand to 300+ words</div></div></div>`).join('');
+  }
+
+}
+
+async function runCompare() {
+  const url1 = document.getElementById('urlInput').value.trim();
+  const url2 = document.getElementById('url2Input').value.trim();
+  if (!url1 || !url2) { alert('Enter both URLs'); return; }
+  const box = document.getElementById('compareResult');
+  box.innerHTML = 'Comparing... (two audits, please wait)';
+  try {
+    const resp = await fetch(API + '/compare', {
+      method: 'POST', headers: {'Content-Type':'application/json'},
+      body: JSON.stringify({url1, url2, email: em()})
+    });
+    const d = await resp.json();
+    if (proBlocked(d)) { box.innerHTML = PRO_HTML; return; }
+    if (d.error) { box.innerHTML = 'Error: ' + d.error; return; }
+    const card = (b, tag) => b.error ? `<div class="score-card"><div class="score-label">${tag}</div><div>${b.error}</div></div>`
+      : `<div class="score-card"><div class="score-label">${tag}: ${b.url}</div>
+        <div class="score-value">${b.scores.overall}</div>
+        <div style="font-size:12px">SEO ${b.scores.seo} · AEO ${b.scores.aeo} · GEO ${b.scores.geo}</div>
+        <div style="font-size:12px;margin-top:4px">Top fix: ${b.top_fix||'—'}</div>
+        <div style="font-size:12px">Keywords: ${(b.keywords||[]).join(', ')}</div></div>`;
+    box.innerHTML = `<div class="scores" style="grid-template-columns:1fr 1fr">${card(d.site_a,'A')}${card(d.site_b,'B')}</div>
+      <div style="font-size:14px;margin-top:8px">Winner: <strong>${d.diff.winner}</strong> (overall gap ${d.diff.overall_diff} pts, SEO gap ${d.diff.seo_diff} pts)</div>`;
+  } catch(e) { box.innerHTML = 'Failed: ' + e.message; }
+}
+
+async function runGenerate(action) {
+  let body = {action};
+  if (action === 'robots') body.domain = document.getElementById('genDomain').value.trim();
+  if (action === 'sitemap') body.urls = document.getElementById('genUrls').value.trim();
+  if (action === 'meta') { body.title = document.getElementById('genTitle').value.trim(); body.description = document.getElementById('genDesc').value.trim(); }
+  body.email = em();
+  const out = document.getElementById('genOut');
+  out.textContent = 'Generating...';
+  try {
+    const resp = await fetch(API + '/generate', {
+      method: 'POST', headers: {'Content-Type':'application/json'}, body: JSON.stringify(body)
+    });
+    const d = await resp.json();
+    if (!d.ok) { out.textContent = 'Error: ' + d.error; return; }
+    out.textContent = d.filename + ':\n\n' + d.content;
+    const blob = new Blob([d.content], {type:'text/plain'});
+    const a = document.createElement('a'); a.href = URL.createObjectURL(blob);
+    a.download = d.filename; a.textContent = ' Download ' + d.filename;
+    a.style.display = 'block'; a.style.marginTop = '8px'; out.appendChild(a);
+  } catch(e) { out.textContent = 'Failed: ' + e.message; }
+}
+
+async function runArticle() {
+  const topic = document.getElementById('artTopic').value.trim();
+  if (!topic) return;
+  const out = document.getElementById('artOut');
+  out.textContent = 'Writing... (takes ~20s)';
+  try {
+    const resp = await fetch(API + '/write-article', {
+      method: 'POST', headers: {'Content-Type':'application/json'},
+      body: JSON.stringify({topic, email: em(), keywords: document.getElementById('artKw').value.trim(),
+        words: parseInt(document.getElementById('artWords').value) || 600})
+    });
+    const d = await resp.json();
+    if (proBlocked(d)) { out.innerHTML = PRO_HTML; return; }
+    if (!d.ok) { out.textContent = 'Error: ' + d.error; return; }
+    let h = `<b>${d.title}</b><br><small>slug: /${d.slug} · meta: ${d.meta_description}</small><br><br>`;
+    (d.sections||[]).forEach(s => { h += `<b>${s.h2}</b><br>${s.body}<br><br>`; });
+    if (d.faq && d.faq.length) { h += `<b>FAQ</b><br>`; d.faq.forEach(f => { h += `<b>Q: ${f.q}</b><br>A: ${f.a}<br><br>`; }); }
+    out.innerHTML = h;
+    const blob = new Blob([`# ${d.h1}\n\n${d.meta_description}\n\n` + (d.sections||[]).map(s => `## ${s.h2}\n\n${s.body}`).join('\n\n')], {type:'text/markdown'});
+    const a = document.createElement('a'); a.href = URL.createObjectURL(blob);
+    a.download = d.slug + '.md'; a.textContent = ' Download article (.md)';
+    a.style.display = 'block'; a.style.marginTop = '8px'; out.appendChild(a);
+  } catch(e) { out.textContent = 'Failed: ' + e.message; }
+}
+
+async function runMetaFix() {
+  const article = document.getElementById('metaArt').value.trim();
+  const out = document.getElementById('metaOut');
+  if (article.length < 50) { out.textContent = 'Paste at least a few sentences first.'; return; }
+  out.textContent = 'Optimizing... (takes ~10s)';
+  try {
+    const resp = await fetch(API + '/meta-fix', {
+      method: 'POST', headers: {'Content-Type':'application/json'},
+      body: JSON.stringify({article, keyword: document.getElementById('metaKw').value.trim(), email: em()})
+    });
+    const d = await resp.json();
+    if (proBlocked(d)) { out.innerHTML = PRO_HTML; return; }
+    if (!d.ok) { out.textContent = 'Error: ' + d.error; return; }
+    out.innerHTML = `<b>Title (${d.title_px}px / 580 max)</b><br>${d.title}<br><br>`
+      + `<b>Description (${d.desc_px}px / 920 max)</b><br>${d.meta_description}`
+      + (d.keyword_used ? `<br><br><small>keyword: ${d.keyword_used}</small>` : '');
+  } catch(e) { out.textContent = 'Failed: ' + e.message; }
+}
+
+async function runBrand() {
+  const brand = document.getElementById('brandName').value.trim();
+  if (!brand) return;
+  const out = document.getElementById('brandOut');
+  out.textContent = 'Checking... (takes ~15s)';
+  try {
+    const resp = await fetch(API + '/brand-check', {
+      method: 'POST', headers: {'Content-Type':'application/json'},
+      body: JSON.stringify({brand, email: em(), category: document.getElementById('brandCat').value.trim()})
+    });
+    const d = await resp.json();
+    if (!d.ok) { out.textContent = 'Error: ' + d.error; return; }
+    out.innerHTML = `<b>AI knows this brand:</b> ${d.knows_brand ? 'YES' : 'NO'}<br><b>Would recommend:</b> ${d.would_recommend}<br><br>${d.what_it_knows}<br><br><b>Competitors it names instead:</b> ${(d.competitors_it_names||[]).join(', ')}<br><br><b>Tip:</b> ${d.visibility_tip}`;
+  } catch(e) { out.textContent = 'Failed: ' + e.message; }
+}
+
+async function runRank() {
+  const kw = document.getElementById('rankKw').value.trim();
+  const dom = document.getElementById('rankDom').value.trim();
+  if (!kw || !dom) return;
+  const out = document.getElementById('rankOut');
+  out.textContent = 'Checking...';
+  try {
+    const resp = await fetch(API + '/rank-check', {
+      method: 'POST', headers: {'Content-Type':'application/json'},
+      body: JSON.stringify({keyword: kw, domain: dom, email: em()})
+    });
+    const d = await resp.json();
+    if (!d.ok) { out.textContent = 'Error: ' + d.error; return; }
+    let h = d.found ? `<b>Position #${d.your_position}</b> for "${d.keyword}"<br><br>` : `<b>Not in top 20</b> for "${d.keyword}"<br><br>`;
+    h += `<small>${d.engine}</small><br>`;
+    (d.top_results||[]).forEach(r => { h += `<small>#${r.position} ${r.host}</small><br>`; });
+    out.innerHTML = h;
+  } catch(e) { out.textContent = 'Failed: ' + e.message; }
+}
+
+async function runTrack() {
+  const kw = document.getElementById('rankKw').value.trim();
+  const dom = document.getElementById('rankDom').value.trim();
+  if (!kw || !dom) return;
+  const out = document.getElementById('trackOut');
+  out.textContent = 'Checking + saving...';
+  try {
+    const resp = await fetch(API + '/track', {
+      method: 'POST', headers: {'Content-Type':'application/json'},
+      body: JSON.stringify({keyword: kw, domain: dom, email: em()})
+    });
+    const d = await resp.json();
+    if (proBlocked(d)) { out.innerHTML = PRO_HTML; return; }
+    if (!d.ok) { out.textContent = 'Error: ' + d.error; return; }
+    let h = d.found ? `<b>Saved: position #${d.your_position}</b> on ${d.saved.date}<br><br>` : `<b>Saved: not in top 20</b> on ${d.saved.date}<br><br>`;
+    h += '<b>History:</b><br>';
+    (d.history||[]).forEach(e => { h += `<small>${e.date} → ${e.found ? '#' + e.position : 'not in top 20'}</small><br>`; });
+    out.innerHTML = h;
+  } catch(e) { out.textContent = 'Failed: ' + e.message; }
+}
+
+async function runOutlinks() {
+  const url = document.getElementById('outUrl').value.trim();
+  if (!url) return;
+  const out = document.getElementById('outOut');
+  out.textContent = 'Inspecting...';
+  try {
+    const resp = await fetch(API + '/outlinks', {
+      method: 'POST', headers: {'Content-Type':'application/json'},
+      body: JSON.stringify({url, email: em()})
+    });
+    const d = await resp.json();
+    if (!d.ok) { out.textContent = 'Error: ' + d.error; return; }
+    let h = `<b>${d.external_domains}</b> outside domains found:<br>`;
+    (d.outlinks||[]).forEach(o => { h += `<div class="data-row">${o.domain} <small>x ${o.links} link(s)</small></div>`; });
+    out.innerHTML = h;
+  } catch(e) { out.textContent = 'Failed: ' + e.message; }
+}
+
+async function runBrokenLeads() {
+  const url = document.getElementById('brokenUrl').value.trim();
+  if (!url) return;
+  const out = document.getElementById('brokenOut');
+  out.textContent = 'Scanning... (checks up to 20 outside links)';
+  try {
+    const resp = await fetch(API + '/broken-leads', {
+      method: 'POST', headers: {'Content-Type':'application/json'},
+      body: JSON.stringify({url, email: em()})
+    });
+    const d = await resp.json();
+    if (!d.ok) { out.textContent = 'Error: ' + d.error; return; }
+    let h = `<b>${(d.broken_leads||[]).length}</b> dead links out of ${d.external_checked} checked:<br>`;
+    (d.broken_leads||[]).forEach(b => { h += `<div class="data-row">${b.broken_url}<br><small>found on: ${b.found_on}</small></div>`; });
+    if (d.pitch) h += `<br><small><b>Pitch:</b> ${d.pitch}</small>`;
+    out.innerHTML = h;
+  } catch(e) { out.textContent = 'Failed: ' + e.message; }
+}
+
+async function runMentions() {
+  const brand = document.getElementById('menBrand').value.trim();
+  const dom = document.getElementById('menDom').value.trim();
+  if (!brand || !dom) { alert('Enter brand name and domain'); return; }
+  const out = document.getElementById('menOut');
+  out.textContent = 'Searching the web... (takes ~1 min)';
+  try {
+    const resp = await fetch(API + '/mentions', {
+      method: 'POST', headers: {'Content-Type':'application/json'},
+      body: JSON.stringify({brand, domain: dom, email: em()})
+    });
+    const d = await resp.json();
+    if (proBlocked(d)) { out.innerHTML = PRO_HTML; return; }
+    if (!d.ok) { out.textContent = 'Error: ' + (d.error || 'failed'); return; }
+    let h = `<b>${(d.unlinked_leads||[]).length}</b> unlinked leads out of ${d.pages_checked} pages:<br>`;
+    (d.unlinked_leads||[]).forEach(l => { h += `<div class="data-row">${l.host}<br><small>${l.url}</small></div>`; });
+    if ((d.already_linked||[]).length) {
+      h += `<br><b>Already linking to you (${d.already_linked.length}):</b><br>`;
+      d.already_linked.forEach(l => { h += `<div class="data-row">${l.host}<br><small>${l.url}</small></div>`; });
+    }
+    out.innerHTML = h;
+  } catch(e) { out.textContent = 'Failed: ' + e.message; }
+}
+
+function exportJSON() { if (!lastResult) return; const json = JSON.stringify(lastResult, null, 2);
+  const blob = new Blob([json], {type:'application/json'});
+  const a = document.createElement('a'); a.href = URL.createObjectURL(blob);
+  a.download = 'audit-' + new URL(lastResult.url).hostname + '.json'; a.click(); }
+function exportCSV() {
+  if (!lastResult) return;
+  let csv = 'Category,Issue,Severity,Fix,Points\n';
+  ['seo_issues','aeo_issues','geo_issues'].forEach(cat => {
+    const name = cat.replace('_issues','').toUpperCase();
+    (lastResult[cat]||[]).forEach(i => {
+      csv += `"${name}","${i.issue}","${i.severity}","${i.fix}",${i.points}\n`;
+    });
+  });
+  const blob = new Blob([csv], {type:'text/csv'});
+  const a = document.createElement('a'); a.href = URL.createObjectURL(blob);
+  a.download = 'audit-' + new URL(lastResult.url).hostname + '.csv'; a.click(); }
+function copyReport() {
+  if (!lastResult) return;
+  const d = lastResult;
+  let text = `SEO/AEO/GEO Audit: ${d.url}\n`;
+  text += `Overall: ${d.scores.overall} (Grade ${d.scores.grade||'?'}) | SEO: ${d.scores.seo} | AEO: ${d.scores.aeo} | GEO: ${d.scores.geo}\n\n`;
+  (d.top_fixes||[]).forEach(f => text += `[${f.category}] ${f.action} (${f.difficulty})\n`);
+  text += '\nSEO Issues:\n'; (d.seo_issues||[]).forEach(i => text += `  ${i.severity}: ${i.issue}\n  Fix: ${i.fix} (+${i.points})\n`);
+  text += '\nAEO Issues:\n'; (d.aeo_issues||[]).forEach(i => text += `  ${i.severity}: ${i.issue}\n  Fix: ${i.fix} (+${i.points})\n`);
+  text += '\nGEO Issues:\n'; (d.geo_issues||[]).forEach(i => text += `  ${i.severity}: ${i.issue}\n  Fix: ${i.fix} (+${i.points})\n`);
+  navigator.clipboard.writeText(text).then(() => alert('Report copied!'));
+}
+document.getElementById('urlInput').addEventListener('keydown', e => { if (e.key === 'Enter') runAudit(); });
+
+/* ---- Route: show landing on /, app on /app ---- */
+(function(){
+  const isApp = location.pathname === '/app';
+  const landing = document.getElementById('landing');
+  const appSection = document.getElementById('app');
+  if(isApp){
+    if(landing) landing.style.display = 'none';
+    appSection.style.display = 'block';
+    document.title = 'BeFirst — SEO / AEO / GEO Audit Tool';
+    document.querySelector('link[rel="canonical"]').href = location.origin + '/app';
+    var bk = document.createElement('a');
+    bk.href = '/'; bk.textContent = '\u2190 Back to home';
+    bk.style.cssText = 'display:inline-block;margin:20px 24px;color:#9A96A0;text-decoration:none;font-size:14px;font-family:-apple-system,sans-serif';
+    appSection.prepend(bk);
+  } else {
+    if(landing) landing.style.display = '';
+    if(appSection) appSection.style.display = 'none';
+  }
+})();
+</script>
+<!-- Cookie Consent Banner -->
+<div id="cookie-banner" style="display:none;position:fixed;bottom:0;left:0;right:0;background:#ECE5D6;border-top:1px solid #D8CCB4;padding:14px 24px;z-index:100;font-family:-apple-system,'Segoe UI',Inter,Roboto,sans-serif;font-size:14px;color:#222;display:flex;align-items:center;justify-content:center;gap:16px;flex-wrap:wrap">
+<span>We use cookies for analytics. By using this site you agree.</span>
+<button onclick="document.getElementById('cookie-banner').style.display='none';localStorage.setItem('befirst_cookie_ok','1')" style="background:#222;color:#ECE5D6;border:none;border-radius:10px;padding:8px 18px;cursor:pointer;font-size:14px">Got it</button>
+</div>
+<script>
+(function(){
+  if(!localStorage.getItem('befirst_cookie_ok')){
+    document.getElementById('cookie-banner').style.display='flex';
+  }
+})();
+</script>
+</body>
+</html>
