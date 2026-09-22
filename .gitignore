@@ -1,2 +1,6 @@
 # Local Netlify folder
 .netlify
+
+.bak-seo-fix/
+*.bak*.html
+*.bak*.png

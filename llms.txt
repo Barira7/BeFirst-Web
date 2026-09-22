@@ -25,6 +25,6 @@ BeFirst is a free SEO audit tool that grades any web page from A+ to F. It check
 - Pro (Rs 799): full-site audit, priority support, API access
 
 ## Links
-- Site: https://befirstseo.pages.dev
-- Audit tool: https://befirstseo.pages.dev/app
+- Site: https://befirstseo.netlify.app
+- Audit tool: https://befirstseo.netlify.app/app
 - Backend API: https://befirst-backend.onrender.com

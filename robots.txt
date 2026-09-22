@@ -24,4 +24,4 @@ Allow: /
 User-agent: Bingbot
 Allow: /
 
-Sitemap: https://befirstseo.pages.dev/sitemap.xml
+Sitemap: https://befirstseo.netlify.app/sitemap.xml
