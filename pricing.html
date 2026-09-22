@@ -132,7 +132,8 @@ footer{border-top:1px solid #D8CCB4;padding:34px 0;text-align:center;color:#555;
 /* Regional pricing: visitors outside India see USD */
 window.BEFIRST_CUR={code:"INR"};
 (function(){fetch("https://ipapi.co/country/").then(function(r){return r.text();}).then(function(c){
-if(c&&c.trim().toUpperCase()!=="IN"){window.BEFIRST_CUR={code:"USD"};
+c=(c||"").trim().toUpperCase();
+if(/^[A-Z]{2}$/.test(c)&&c!=="IN"){window.BEFIRST_CUR={code:"USD"};
 document.querySelectorAll(".pr").forEach(function(el){var u=el.getAttribute("data-usd");if(u)el.textContent=u;});
 if(typeof window.__recur==="function"){window.__recur();}}
 }).catch(function(){});})();
