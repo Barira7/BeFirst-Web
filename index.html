@@ -663,23 +663,14 @@ else{m.textContent='That email did not work, try again.';}
 .catch(function(){m.textContent='Could not save right now — try again.';});
 }
 </script>
-<script>
-/* Regional pricing: visitors outside India see USD */
-window.BEFIRST_CUR={code:"INR"};
-(function(){fetch("https://ipapi.co/country/").then(function(r){return r.text();}).then(function(c){
-c=(c||"").trim().toUpperCase();
-if(/^[A-Z]{2}$/.test(c)&&c!=="IN"){window.BEFIRST_CUR={code:"USD"};
-document.querySelectorAll(".pr").forEach(function(el){var u=el.getAttribute("data-usd");if(u)el.textContent=u;});
-if(typeof window.__recur==="function"){window.__recur();}}
-}).catch(function(){});})();
-</script>
+<script src="/cur.js"></script>
 
 <!-- ========== APP JS ========== -->
 <script>
 const API = window.BEFIRST_API || (location.hostname ? location.protocol + '//' + location.host : 'http://127.0.0.1:8007');
 function em(){try{return localStorage.getItem('befirst_email')||'';}catch(e){return '';}}
 let lastResult = null;
-const PRO_HTML = `<div class="pro-note">🔒 This needs a paid plan — <strong>Starter <span class="pr" data-usd="$5">$5</span>/mo</strong> or <strong>Pro <span class="pr" data-usd="$15">$15</span>/mo</strong>. <a href="#pricing">See plans</a></div>`;
+function proNote(){var f=window.BF_txt||function(u){return "$"+u;};return `<div class="pro-note">🔒 This needs a paid plan — <strong>Starter ${f(5)}/mo</strong> or <strong>Pro ${f(15)}/mo</strong>. <a href="#pricing">See plans</a></div>`;}
 function proBlocked(d) { return d && (d.pro_required || d.upgrade || d.upgrade_required); }
 
 async function runAudit() {
@@ -698,7 +689,7 @@ async function runAudit() {
     });
     const data = await resp.json();
     if (data.signup_required) { alert('This email is not signed up yet — sign up free on the home page first, then try again.'); return; }
-    if (proBlocked(data)) { alert('Full-site crawl needs Pro (' + ((window.BEFIRST_CUR && window.BEFIRST_CUR.code === "USD") ? "$15" : "₹799") + '/mo). Uncheck it for a free single-page audit.'); return; }
+    if (proBlocked(data)) { alert('Full-site crawl needs Pro (' + (window.BF_txt ? window.BF_txt(15) : "$15") + '/mo). Uncheck it for a free single-page audit.'); return; }
     if (data.error) { alert('Error: ' + data.error); return; }
     lastResult = data;
     renderResult(data);
@@ -824,7 +815,7 @@ async function runCompare() {
       body: JSON.stringify({url1, url2, email: em()})
     });
     const d = await resp.json();
-    if (proBlocked(d)) { box.innerHTML = PRO_HTML; return; }
+    if (proBlocked(d)) { box.innerHTML = proNote(); return; }
     if (d.error) { box.innerHTML = 'Error: ' + d.error; return; }
     const card = (b, tag) => b.error ? `<div class="score-card"><div class="score-label">${tag}</div><div>${b.error}</div></div>`
       : `<div class="score-card"><div class="score-label">${tag}: ${b.url}</div>
@@ -871,7 +862,7 @@ async function runArticle() {
         words: parseInt(document.getElementById('artWords').value) || 600})
     });
     const d = await resp.json();
-    if (proBlocked(d)) { out.innerHTML = PRO_HTML; return; }
+    if (proBlocked(d)) { out.innerHTML = proNote(); return; }
     if (!d.ok) { out.textContent = 'Error: ' + d.error; return; }
     let h = `<b>${d.title}</b><br><small>slug: /${d.slug} · meta: ${d.meta_description}</small><br><br>`;
     (d.sections||[]).forEach(s => { h += `<b>${s.h2}</b><br>${s.body}<br><br>`; });
@@ -895,7 +886,7 @@ async function runMetaFix() {
       body: JSON.stringify({article, keyword: document.getElementById('metaKw').value.trim(), email: em()})
     });
     const d = await resp.json();
-    if (proBlocked(d)) { out.innerHTML = PRO_HTML; return; }
+    if (proBlocked(d)) { out.innerHTML = proNote(); return; }
     if (!d.ok) { out.textContent = 'Error: ' + d.error; return; }
     out.innerHTML = `<b>Title (${d.title_px}px / 580 max)</b><br>${d.title}<br><br>`
       + `<b>Description (${d.desc_px}px / 920 max)</b><br>${d.meta_description}`
@@ -951,7 +942,7 @@ async function runTrack() {
       body: JSON.stringify({keyword: kw, domain: dom, email: em()})
     });
     const d = await resp.json();
-    if (proBlocked(d)) { out.innerHTML = PRO_HTML; return; }
+    if (proBlocked(d)) { out.innerHTML = proNote(); return; }
     if (!d.ok) { out.textContent = 'Error: ' + d.error; return; }
     let h = d.found ? `<b>Saved: position #${d.your_position}</b> on ${d.saved.date}<br><br>` : `<b>Saved: not in top 20</b> on ${d.saved.date}<br><br>`;
     h += '<b>History:</b><br>';
@@ -1009,7 +1000,7 @@ async function runMentions() {
       body: JSON.stringify({brand, domain: dom, email: em()})
     });
     const d = await resp.json();
-    if (proBlocked(d)) { out.innerHTML = PRO_HTML; return; }
+    if (proBlocked(d)) { out.innerHTML = proNote(); return; }
     if (!d.ok) { out.textContent = 'Error: ' + (d.error || 'failed'); return; }
     let h = `<b>${(d.unlinked_leads||[]).length}</b> unlinked leads out of ${d.pages_checked} pages:<br>`;
     (d.unlinked_leads||[]).forEach(l => { h += `<div class="data-row">${l.host}<br><small>${l.url}</small></div>`; });

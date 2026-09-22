@@ -75,20 +75,16 @@ footer{border-top:1px solid #D8CCB4;padding:34px 0;text-align:center;color:#555;
 </div>
 </div>
 <footer>© 2026 BeFirst SEO · <a href="/">Home</a> · <a href="/privacy">Privacy</a> · <a href="/terms">Terms</a></footer>
-<script>
-/* Regional pricing: visitors outside India see USD */
-window.BEFIRST_CUR={code:"INR"};
-(function(){fetch("https://ipapi.co/country/").then(function(r){return r.text();}).then(function(c){
-c=(c||"").trim().toUpperCase();
-if(/^[A-Z]{2}$/.test(c)&&c!=="IN"){window.BEFIRST_CUR={code:"USD"};
-document.querySelectorAll(".pr").forEach(function(el){var u=el.getAttribute("data-usd");if(u)el.textContent=u;});
-if(typeof window.__recur==="function"){window.__recur();}}
-}).catch(function(){});})();
-</script>
+<script src="/cur.js"></script>
 <script>
 if (!BeFirst.getToken()) location.href = "/login";
 var userEmail = "";
-function pc(inr,usd){return (window.BEFIRST_CUR&&window.BEFIRST_CUR.code==="USD")?usd:inr;}
+function pc(inr,usd){
+  if(!(window.BEFIRST_CUR&&window.BEFIRST_CUR.code==="USD")) return inr;
+  var m=String(usd).match(/(\d+(?:\.\d+)?)/);
+  if(m&&window.BF_txt){var s=window.BF_txt(parseFloat(m[1]));return s+(String(usd).indexOf("mo")>-1?"/mo":"");}
+  return usd;
+}
 var _plan="free";
 function renderPlan(){var p=_plan;
   document.getElementById("plan").innerHTML = p + " <small>" + (p === "free" ? pc("₹0","$0") : p === "starter" ? pc("₹99/mo","$5/mo") : pc("₹799/mo","$15/mo")) + "</small>";
