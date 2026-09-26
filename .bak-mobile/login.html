@@ -3,10 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sign up — BeFirst SEO</title>
-<meta name="description" content="Create your free BeFirst SEO account. Audit any website, track rankings, save history.">
-<link rel="canonical" href="https://befirstseo.pages.dev/signup">
-<meta name="robots" content="index, follow">
+<title>Log in — BeFirst SEO</title>
+<meta name="description" content="Log in to your BeFirst SEO account.">
+<meta name="robots" content="noindex, follow">
 <meta name="theme-color" content="#ECE5D6">
 <link rel="icon" href="BF_Logo_Reference.svg">
 <script>window.BEFIRST_API='https://befirst-backend.onrender.com';</script>
@@ -39,24 +38,23 @@ input:focus{outline:2px solid #B4552D;border-color:#B4552D}
 .switch a{color:#B4552D}
 footer{border-top:1px solid #D8CCB4;padding:34px 0;text-align:center;color:#555;font-size:14px}
 </style>
-<link rel="stylesheet" href="/mobile-nav.css">
 </head>
 <body>
 <nav><div class="nav-in">
 <a class="brand" href="/"><img class="brand-logo" src="BF_Logo_Reference.svg" alt="BeFirst SEO logo" /><span class="brand-name">Be<strong>First</strong></span></a>
-<div class="nav-links"><a href="/">Home</a><a href="/pricing">Pricing</a><a href="/login">Log in</a></div></div></nav>
+<div class="nav-links"><a href="/">Home</a><a href="/pricing">Pricing</a><a href="/signup">Sign up</a></div></div></nav>
 <div class="wrap"><div class="card">
-<h1>Create account</h1>
-<p class="sub">Free forever plan. No credit card.</p>
+<h1>Welcome back</h1>
+<p class="sub">Log in to your dashboard.</p>
 <form id="f">
 <label for="email">Email</label>
 <input id="email" type="email" required autocomplete="email" placeholder="you@example.com">
-<label for="pw">Password (6+ characters)</label>
-<input id="pw" type="password" required minlength="6" autocomplete="new-password" placeholder="••••••••">
-<button class="btn accent full" type="submit">Sign up free</button>
+<label for="pw">Password</label>
+<input id="pw" type="password" required autocomplete="current-password" placeholder="••••••••">
+<button class="btn accent full" type="submit">Log in</button>
 </form>
 <p class="msg" id="msg"></p>
-<p class="switch">Have an account? <a href="/login">Log in</a></p>
+<p class="switch">New here? <a href="/signup">Create free account</a></p>
 </div></div>
 <footer>© 2026 BeFirst SEO · <a href="/">Home</a> · <a href="/privacy">Privacy</a> · <a href="/terms">Terms</a></footer>
 <script>
@@ -64,17 +62,16 @@ if (BeFirst.getToken()) location.href = "/dashboard";
 document.getElementById("f").addEventListener("submit", function (e) {
   e.preventDefault();
   var msg = document.getElementById("msg");
-  msg.className = "msg"; msg.textContent = "Creating your account…";
-  BeFirst.api("/register", { method: "POST", body: JSON.stringify({
+  msg.className = "msg"; msg.textContent = "Logging in…";
+  BeFirst.api("/login", { method: "POST", body: JSON.stringify({
     email: document.getElementById("email").value,
     password: document.getElementById("pw").value }) })
   .then(function (j) {
-    if (j.ok) { BeFirst.setToken(j.token); var q = new URLSearchParams(location.search).get("plan"); location.href = (q === "starter" || q === "pro") ? "/dashboard?upgrade=" + q : "/dashboard"; }
-    else { msg.className = "msg err"; msg.textContent = j.error === "account exists, please log in" ? "Account exists — taking you to login…" : (j.error || "Signup failed, try again."); if (j.error === "account exists, please log in") setTimeout(function(){location.href="/login";}, 1200); }
+    if (j.ok) { BeFirst.setToken(j.token); location.href = "/dashboard"; }
+    else { msg.className = "msg err"; msg.textContent = "Wrong email or password."; }
   })
   .catch(function () { msg.className = "msg err"; msg.textContent = "Server waking up (takes ~50 sec on free tier) — try again in a minute."; });
 });
 </script>
-<script src="/mobile-nav.js" defer></script>
 </body>
 </html>

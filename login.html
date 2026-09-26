@@ -38,6 +38,7 @@ input:focus{outline:2px solid #B4552D;border-color:#B4552D}
 .switch a{color:#B4552D}
 footer{border-top:1px solid #D8CCB4;padding:34px 0;text-align:center;color:#555;font-size:14px}
 </style>
+<link rel="stylesheet" href="/mobile-nav.css">
 </head>
 <body>
 <nav><div class="nav-in">
@@ -73,5 +74,6 @@ document.getElementById("f").addEventListener("submit", function (e) {
   .catch(function () { msg.className = "msg err"; msg.textContent = "Server waking up (takes ~50 sec on free tier) — try again in a minute."; });
 });
 </script>
+<script src="/mobile-nav.js" defer></script>
 </body>
 </html>
