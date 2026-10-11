@@ -53,6 +53,7 @@ footer{border-top:1px solid #D8CCB4;padding:34px 0;text-align:center;color:#555;
 <input id="email" type="email" required autocomplete="email" placeholder="you@example.com">
 <label for="pw">Password (6+ characters)</label>
 <input id="pw" type="password" required minlength="6" autocomplete="new-password" placeholder="••••••••">
+<input type="text" id="hp" name="website" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px" aria-hidden="true">
 <button class="btn accent full" type="submit">Sign up free</button>
 </form>
 <p class="msg" id="msg"></p>
@@ -63,6 +64,7 @@ footer{border-top:1px solid #D8CCB4;padding:34px 0;text-align:center;color:#555;
 if (BeFirst.getToken()) location.href = "/dashboard";
 document.getElementById("f").addEventListener("submit", function (e) {
   e.preventDefault();
+  if (document.getElementById("hp").value) { e.preventDefault(); return; }
   var msg = document.getElementById("msg");
   msg.className = "msg"; msg.textContent = "Creating your account…";
   BeFirst.api("/register", { method: "POST", body: JSON.stringify({

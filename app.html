@@ -586,6 +586,14 @@ footer a{color:var(--ink-soft)}
 <div id="menOut" style="margin-top:12px;font-size:13px"></div>
 </div>
 
+<div class="tool-box" id="gscBox">
+<h3>GSC Opportunity Finder</h3>
+<p class="desc">Paste your Search Console Performance export — finds page-2 keywords to push up and page-1 titles losing clicks.</p>
+<div class="app-input-row"><textarea id="gscCsv" rows="4" style="width:100%" placeholder="Search Console → Performance → Export. Paste the table here (Query, Clicks, Impressions, CTR, Position)"></textarea></div>
+<div class="app-input-row"><button onclick="runGsc()">Find opportunities</button></div>
+<div id="gscOut" style="margin-top:12px;font-size:13px"></div>
+</div>
+
 <!-- Raw Data debug block removed -->
 </div>
 </div>
@@ -1012,6 +1020,27 @@ async function runMentions() {
       h += `<br><b>Already linking to you (${d.already_linked.length}):</b><br>`;
       d.already_linked.forEach(l => { h += `<div class="data-row">${l.host}<br><small>${l.url}</small></div>`; });
     }
+    out.innerHTML = h;
+  } catch(e) { out.textContent = 'Failed: ' + e.message; }
+}
+
+async function runGsc() {
+  const csv = document.getElementById('gscCsv').value.trim();
+  if (!csv) return;
+  const out = document.getElementById('gscOut');
+  out.textContent = 'Analyzing...';
+  try {
+    const resp = await fetch(API + '/gsc-check', {
+      method: 'POST', headers: {'Content-Type':'application/json'},
+      body: JSON.stringify({csv, email: em()})
+    });
+    const d = await resp.json();
+    if (!d.ok) { out.textContent = 'Error: ' + (d.error || 'failed'); return; }
+    let h = `<b>${d.rows_parsed}</b> queries checked: <b>${d.summary.page2_count}</b> page-2 chances, <b>${d.summary.bleed_count}</b> click leaks${d.summary.cannibalization_count ? `, <b>${d.summary.cannibalization_count}</b> same-keyword clashes` : ''}.<br><br>`;
+    if ((d.page2_ops||[]).length) { h += '<b>Page-2 opportunities (push to page 1):</b><br>'; d.page2_ops.forEach(o => { h += `<div class="data-row">"${o.query}" — position ${o.position}, ${o.impressions} views<br><small>${o.fix}</small></div>`; }); }
+    if ((d.ctr_bleed||[]).length) { h += '<br><b>Click leaks (rewrite title + meta):</b><br>'; d.ctr_bleed.forEach(o => { h += `<div class="data-row">"${o.query}" — #${o.position}, ${o.ctr_pct}% clicks (normal ~${o.expected_ctr_pct}%)<br><small>${o.fix}</small></div>`; }); }
+    if ((d.cannibalization||[]).length) { h += '<br><b>Same keyword, multiple pages:</b><br>'; d.cannibalization.forEach(c => { h += `<div class="data-row">"${c.query}" — ${c.pages.join(' · ')}<br><small>${c.fix}</small></div>`; }); }
+    if (!d.summary.page2_count && !d.summary.bleed_count && !d.summary.cannibalization_count) h += 'Nothing leaking — your clicks match your positions.';
     out.innerHTML = h;
   } catch(e) { out.textContent = 'Failed: ' + e.message; }
 }
